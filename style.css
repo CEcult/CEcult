@@ -162,7 +162,7 @@ nav a:focus {
 }
 
 .slides img {
-    flex: 0 0 100%;
+    flex: 0 0 1%;
     height: 400px;
     object-fit: cover;
     user-select: none;
