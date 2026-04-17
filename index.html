@@ -1,0 +1,1545 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="CEcult+ — Portal de Cultura Cearense. Valorização, preservação e difusão da cultura do Ceará em toda sua diversidade.">
+<title>CEcult+ — Cultura Cearense</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@500;700;900&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
+<style>
+/* ================================================================
+   CECULT+ — PORTAL DE CULTURA CEARENSE
+   Estética: Atlas Editorial de Luxo × Alma Nordestina
+   ================================================================ */
+
+:root {
+  --sol:        #E8920A;
+  --sol-vivo:   #F5A623;
+  --terra:      #8B3A0F;
+  --terra-soft: #B5531E;
+  --areia:      #F2E2C0;
+  --areia-pale: #FBF5E8;
+  --ceu:        #1A4A7A;
+  --ceu-deep:   #0D2E52;
+  --ceu-light:  #3A72B0;
+  --verde-caat: #3B6E3A;
+  --verde-light:#5A9A58;
+  --roxo-noite: #2A1840;
+  --ink:        #12090A;
+  --ink-mid:    #2A1A0C;
+  --cream:      #FFFBF2;
+  --dust:       #8A7A62;
+  --dust-light: #B5A48A;
+
+  --ff-display: 'Playfair Display', Georgia, serif;
+  --ff-body:    'Barlow', sans-serif;
+  --ff-cond:    'Barlow Condensed', sans-serif;
+  --ff-fell:    'IM Fell English', Georgia, serif;
+
+  --ease-expo:  cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-back:  cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  --shadow-sm: 0 2px 12px rgba(18,9,10,0.12);
+  --shadow-md: 0 8px 32px rgba(18,9,10,0.18);
+  --shadow-lg: 0 20px 60px rgba(18,9,10,0.25);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; }
+
+body {
+  font-family: var(--ff-body);
+  background: var(--cream);
+  color: var(--ink);
+  overflow-x: hidden;
+  cursor: default;
+}
+
+::selection { background: var(--sol); color: var(--cream); }
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: var(--areia); }
+::-webkit-scrollbar-thumb { background: var(--terra); border-radius: 3px; }
+
+/* ===== HEADER ===== */
+#header {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 200;
+  background: rgba(18, 9, 10, 0.96);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border-bottom: 1px solid rgba(232,146,10,0.18);
+  transition: all 0.3s ease;
+}
+
+.header-inner {
+  max-width: 1400px; margin: 0 auto;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 2rem; height: 64px;
+}
+
+.logo {
+  display: flex; flex-direction: column; line-height: 1;
+  text-decoration: none; gap: 1px;
+}
+
+.logo-mark {
+  font-family: var(--ff-cond);
+  font-size: 1.5rem; font-weight: 900;
+  letter-spacing: 0.05em;
+  background: linear-gradient(135deg, var(--sol-vivo), var(--sol));
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.logo-sub {
+  font-size: 0.58rem; font-weight: 500;
+  letter-spacing: 0.25em; text-transform: uppercase;
+  color: var(--dust-light);
+}
+
+.nav-links {
+  display: flex; align-items: center; gap: 0.25rem;
+  list-style: none;
+}
+
+.nav-links a {
+  color: rgba(242,226,192,0.7);
+  text-decoration: none;
+  font-size: 0.78rem; font-weight: 600;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  padding: 0.5rem 0.9rem;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.nav-links a:hover, .nav-links a.active {
+  color: var(--sol-vivo);
+  background: rgba(232,146,10,0.1);
+}
+
+.nav-search-btn {
+  background: none; border: 1px solid rgba(232,146,10,0.3);
+  color: var(--sol); padding: 0.45rem 0.85rem;
+  border-radius: 100px; cursor: pointer;
+  font-family: var(--ff-body); font-size: 0.75rem;
+  font-weight: 600; letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+  display: flex; align-items: center; gap: 0.4rem;
+}
+
+.nav-search-btn:hover {
+  background: rgba(232,146,10,0.12);
+  border-color: var(--sol);
+}
+
+.hamburger {
+  display: none; flex-direction: column; gap: 5px;
+  background: none; border: none; cursor: pointer; padding: 4px;
+}
+
+.hamburger span {
+  display: block; width: 24px; height: 2px;
+  background: var(--areia); border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* ===== HERO ===== */
+#hero {
+  min-height: 100vh;
+  background: var(--ink);
+  display: flex; flex-direction: column;
+  justify-content: flex-end;
+  position: relative; overflow: hidden;
+  padding-top: 64px;
+}
+
+.hero-bg {
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse at 70% 20%, rgba(232,146,10,0.18) 0%, transparent 55%),
+    radial-gradient(ellipse at 20% 80%, rgba(26,74,122,0.25) 0%, transparent 55%),
+    radial-gradient(ellipse at 50% 50%, rgba(59,110,58,0.08) 0%, transparent 60%);
+  z-index: 0;
+}
+
+.hero-pattern {
+  position: absolute; inset: 0; z-index: 0; opacity: 0.04;
+  background-image:
+    repeating-linear-gradient(0deg, transparent, transparent 80px, rgba(232,146,10,0.5) 80px, rgba(232,146,10,0.5) 81px),
+    repeating-linear-gradient(90deg, transparent, transparent 80px, rgba(232,146,10,0.5) 80px, rgba(232,146,10,0.5) 81px);
+}
+
+.hero-content {
+  position: relative; z-index: 1;
+  max-width: 1400px; margin: 0 auto; width: 100%;
+  padding: 4rem 2rem 5rem;
+}
+
+.hero-eyebrow {
+  font-family: var(--ff-cond); font-size: 0.78rem; font-weight: 700;
+  letter-spacing: 0.35em; text-transform: uppercase;
+  color: var(--sol); margin-bottom: 1.5rem;
+  display: flex; align-items: center; gap: 0.75rem;
+  opacity: 0; animation: fadeUp 0.8s 0.3s var(--ease-expo) forwards;
+}
+
+.hero-eyebrow::before {
+  content: ''; display: inline-block; width: 32px; height: 2px;
+  background: var(--sol);
+}
+
+.hero-title {
+  font-family: var(--ff-display); font-weight: 900;
+  font-size: clamp(3rem, 8vw, 7rem);
+  line-height: 0.95; letter-spacing: -0.02em;
+  color: var(--areia); margin-bottom: 1.75rem;
+  opacity: 0; animation: fadeUp 0.9s 0.4s var(--ease-expo) forwards;
+}
+
+.hero-title em {
+  font-style: italic;
+  background: linear-gradient(135deg, var(--sol-vivo), var(--sol));
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-desc {
+  font-family: var(--ff-fell); font-style: italic;
+  font-size: clamp(1rem, 2vw, 1.3rem);
+  color: rgba(242,226,192,0.65); max-width: 560px;
+  line-height: 1.7; margin-bottom: 3rem;
+  opacity: 0; animation: fadeUp 0.9s 0.55s var(--ease-expo) forwards;
+}
+
+.hero-stats {
+  display: flex; gap: 3rem; flex-wrap: wrap;
+  opacity: 0; animation: fadeUp 0.9s 0.7s var(--ease-expo) forwards;
+}
+
+.hero-stat {}
+
+.hero-stat-num {
+  font-family: var(--ff-cond); font-weight: 900;
+  font-size: 2.4rem; line-height: 1;
+  color: var(--sol-vivo);
+}
+
+.hero-stat-label {
+  font-size: 0.72rem; font-weight: 600;
+  letter-spacing: 0.15em; text-transform: uppercase;
+  color: rgba(242,226,192,0.45); margin-top: 0.2rem;
+}
+
+.hero-scroll {
+  position: absolute; bottom: 2rem; right: 2rem; z-index: 1;
+  display: flex; align-items: center; gap: 0.75rem;
+  font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase;
+  color: rgba(242,226,192,0.3);
+  opacity: 0; animation: fadeIn 1s 1.2s ease forwards;
+}
+
+.scroll-line {
+  width: 48px; height: 1px;
+  background: linear-gradient(90deg, rgba(232,146,10,0.5), transparent);
+  animation: scrollPulse 2.5s ease-in-out infinite;
+}
+
+@keyframes scrollPulse {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+
+/* ===== PAGES SYSTEM ===== */
+.page { display: none; }
+.page.active { display: block; }
+
+/* ===== SECTION BASE ===== */
+.section-header {
+  text-align: center; max-width: 700px; margin: 0 auto 4rem;
+}
+
+.section-label {
+  font-family: var(--ff-cond); font-size: 0.72rem; font-weight: 700;
+  letter-spacing: 0.35em; text-transform: uppercase;
+  color: var(--terra-soft); margin-bottom: 0.75rem;
+  display: flex; align-items: center; justify-content: center; gap: 0.75rem;
+}
+
+.section-label::before, .section-label::after {
+  content: ''; flex: 1; max-width: 48px; height: 1px;
+  background: var(--terra-soft); opacity: 0.5;
+}
+
+.section-title {
+  font-family: var(--ff-display); font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700; line-height: 1.1; color: var(--ink);
+  margin-bottom: 1rem;
+}
+
+.section-title em { font-style: italic; color: var(--terra); }
+
+.section-intro {
+  font-family: var(--ff-fell); font-style: italic;
+  font-size: 1.05rem; color: var(--dust); line-height: 1.7;
+}
+
+/* ===== HOME — CATEGORIES GRID ===== */
+#page-home { padding-top: 0; }
+
+#categories-section {
+  padding: 5rem 2rem;
+  background: var(--cream);
+  max-width: 1400px; margin: 0 auto;
+}
+
+.search-filter-bar {
+  display: flex; gap: 1rem; align-items: center;
+  margin-bottom: 2.5rem; flex-wrap: wrap;
+}
+
+.search-field {
+  flex: 1; min-width: 200px;
+  position: relative;
+}
+
+.search-field input {
+  width: 100%; padding: 0.75rem 1rem 0.75rem 2.75rem;
+  border: 2px solid var(--areia); border-radius: 8px;
+  font-family: var(--ff-body); font-size: 0.9rem;
+  background: var(--cream); color: var(--ink);
+  transition: all 0.25s ease; outline: none;
+}
+
+.search-field input:focus {
+  border-color: var(--sol);
+  box-shadow: 0 0 0 3px rgba(232,146,10,0.12);
+}
+
+.search-icon {
+  position: absolute; left: 0.85rem; top: 50%;
+  transform: translateY(-50%); font-size: 1rem;
+  pointer-events: none;
+}
+
+.filter-chips {
+  display: flex; gap: 0.5rem; flex-wrap: wrap;
+}
+
+.chip {
+  padding: 0.45rem 1rem;
+  border: 1.5px solid var(--areia);
+  border-radius: 100px; background: var(--cream);
+  font-family: var(--ff-body); font-size: 0.75rem;
+  font-weight: 600; letter-spacing: 0.06em;
+  cursor: pointer; transition: all 0.2s ease;
+  color: var(--dust); white-space: nowrap;
+}
+
+.chip:hover { border-color: var(--sol); color: var(--sol); }
+.chip.active {
+  background: var(--sol); border-color: var(--sol);
+  color: var(--cream);
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1.25rem;
+}
+
+.cat-card {
+  border-radius: 12px; overflow: hidden;
+  cursor: pointer; position: relative;
+  transition: all 0.35s var(--ease-expo);
+  background: var(--cream);
+  border: 1.5px solid rgba(139,58,15,0.1);
+  text-decoration: none; color: inherit;
+  display: flex; flex-direction: column;
+}
+
+.cat-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--sol);
+}
+
+.cat-card-visual {
+  height: 140px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 3.5rem; position: relative; overflow: hidden;
+}
+
+.cat-card-visual::after {
+  content: '';
+  position: absolute; inset: 0;
+  background: linear-gradient(to bottom, transparent 40%, rgba(18,9,10,0.25));
+  pointer-events: none;
+}
+
+.cat-card-badge {
+  position: absolute; top: 10px; right: 10px;
+  background: rgba(18,9,10,0.6);
+  font-size: 0.6rem; font-weight: 700;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--areia); padding: 0.25rem 0.6rem;
+  border-radius: 100px; backdrop-filter: blur(8px);
+}
+
+.cat-card-body { padding: 1.25rem; flex: 1; display: flex; flex-direction: column; gap: 0.4rem; }
+
+.cat-card-name {
+  font-family: var(--ff-display); font-size: 1.05rem;
+  font-weight: 700; color: var(--ink);
+  line-height: 1.2;
+}
+
+.cat-card-desc {
+  font-size: 0.82rem; color: var(--dust);
+  line-height: 1.5; flex: 1; font-weight: 300;
+}
+
+.cat-card-footer {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-top: 0.75rem; padding-top: 0.75rem;
+  border-top: 1px solid rgba(139,58,15,0.08);
+}
+
+.cat-card-count {
+  font-size: 0.7rem; font-weight: 600;
+  color: var(--terra-soft); letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.cat-arrow {
+  width: 28px; height: 28px; border-radius: 50%;
+  background: var(--areia); display: flex;
+  align-items: center; justify-content: center;
+  font-size: 0.8rem; transition: all 0.25s ease;
+}
+
+.cat-card:hover .cat-arrow {
+  background: var(--sol); color: var(--cream);
+  transform: translateX(3px);
+}
+
+/* ===== MODAL DETALHADA ===== */
+#detail-modal {
+  position: fixed; inset: 0; z-index: 300;
+  display: flex; align-items: flex-start;
+  background: rgba(12,6,8,0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  overflow-y: auto;
+  opacity: 0; pointer-events: none;
+  transition: opacity 0.35s ease;
+}
+
+#detail-modal.open {
+  opacity: 1; pointer-events: all;
+}
+
+.modal-inner {
+  background: var(--cream);
+  max-width: 860px; width: 100%;
+  margin: 2rem auto;
+  border-radius: 16px; overflow: hidden;
+  transform: translateY(40px) scale(0.97);
+  transition: transform 0.4s var(--ease-expo);
+  box-shadow: var(--shadow-lg);
+}
+
+#detail-modal.open .modal-inner {
+  transform: translateY(0) scale(1);
+}
+
+.modal-hero {
+  padding: 3.5rem 3rem 2.5rem;
+  position: relative; overflow: hidden;
+}
+
+.modal-hero::after {
+  content: '';
+  position: absolute; inset: 0;
+  background: linear-gradient(to bottom, transparent 40%, rgba(242,226,192,0.9) 100%);
+  pointer-events: none;
+}
+
+.modal-emoji {
+  font-size: 5rem; display: block;
+  margin-bottom: 1.5rem; position: relative; z-index: 1;
+  animation: floatEmoji 4s ease-in-out infinite;
+}
+
+@keyframes floatEmoji {
+  0%, 100% { transform: translateY(0) rotate(-2deg); }
+  50% { transform: translateY(-8px) rotate(2deg); }
+}
+
+.modal-category {
+  font-size: 0.7rem; font-weight: 700;
+  letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--terra-soft); margin-bottom: 0.5rem;
+  position: relative; z-index: 1;
+}
+
+.modal-title {
+  font-family: var(--ff-display); font-weight: 900;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  color: var(--ink); line-height: 1.1;
+  position: relative; z-index: 1;
+  margin-bottom: 0.5rem;
+}
+
+.modal-subtitle {
+  font-family: var(--ff-fell); font-style: italic;
+  font-size: 1rem; color: var(--dust);
+  position: relative; z-index: 1;
+}
+
+.modal-close {
+  position: absolute; top: 1.5rem; right: 1.5rem; z-index: 2;
+  background: rgba(18,9,10,0.1); border: none; cursor: pointer;
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.2rem; color: var(--ink); transition: all 0.2s ease;
+}
+
+.modal-close:hover { background: var(--terra); color: var(--cream); }
+
+.modal-body { padding: 2.5rem 3rem 3rem; display: flex; flex-direction: column; gap: 2rem; }
+
+.modal-section-title {
+  font-family: var(--ff-cond); font-size: 0.7rem; font-weight: 700;
+  letter-spacing: 0.25em; text-transform: uppercase;
+  color: var(--terra); margin-bottom: 0.75rem;
+  display: flex; align-items: center; gap: 0.6rem;
+}
+
+.modal-section-title::after {
+  content: ''; flex: 1; height: 1px;
+  background: linear-gradient(90deg, rgba(181,83,30,0.3), transparent);
+}
+
+.modal-text {
+  font-size: 0.95rem; color: var(--ink-mid);
+  line-height: 1.8; font-weight: 300;
+}
+
+.modal-text strong { color: var(--terra); font-weight: 600; }
+
+.modal-text em {
+  font-family: var(--ff-fell); font-style: italic;
+  color: var(--dust); font-size: 1.02rem;
+}
+
+.modal-highlights {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 0.75rem;
+}
+
+.highlight-item {
+  background: var(--areia-pale);
+  border: 1px solid rgba(139,58,15,0.1);
+  border-radius: 8px; padding: 1rem;
+  text-align: center;
+}
+
+.highlight-icon { font-size: 1.5rem; display: block; margin-bottom: 0.4rem; }
+
+.highlight-label {
+  font-size: 0.7rem; font-weight: 700;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--terra-soft); margin-bottom: 0.2rem;
+}
+
+.highlight-value {
+  font-family: var(--ff-display); font-size: 0.92rem;
+  font-weight: 700; color: var(--ink);
+}
+
+.modal-quote {
+  background: linear-gradient(135deg, rgba(139,58,15,0.06), rgba(26,74,122,0.04));
+  border-left: 4px solid var(--terra);
+  border-radius: 0 8px 8px 0; padding: 1.5rem 1.75rem;
+}
+
+.modal-quote blockquote {
+  font-family: var(--ff-display); font-style: italic;
+  font-size: 1.2rem; font-weight: 400;
+  color: var(--ink-mid); line-height: 1.5;
+}
+
+.modal-quote cite {
+  display: block; margin-top: 0.75rem;
+  font-size: 0.78rem; color: var(--terra-soft);
+  font-style: normal; font-weight: 600; letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.modal-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+
+.modal-tag {
+  padding: 0.3rem 0.85rem;
+  border-radius: 100px; border: 1.5px solid;
+  font-size: 0.72rem; font-weight: 600;
+  letter-spacing: 0.06em;
+}
+
+.tag-orange { border-color: rgba(232,146,10,0.4); color: var(--sol); background: rgba(232,146,10,0.07); }
+.tag-green { border-color: rgba(59,110,58,0.35); color: var(--verde-caat); background: rgba(59,110,58,0.07); }
+.tag-blue { border-color: rgba(26,74,122,0.35); color: var(--ceu); background: rgba(26,74,122,0.07); }
+.tag-red { border-color: rgba(139,58,15,0.4); color: var(--terra); background: rgba(139,58,15,0.07); }
+
+/* ===== PAGE: CULTURA CEARENSE ===== */
+#page-cultura {
+  padding: 80px 0 0;
+}
+
+.cultura-hero {
+  background: linear-gradient(160deg, var(--ceu-deep) 0%, var(--ink) 60%, var(--terra) 100%);
+  color: var(--areia); padding: 5rem 2rem;
+  position: relative; overflow: hidden;
+}
+
+.cultura-hero::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: repeating-linear-gradient(
+    45deg, transparent, transparent 40px,
+    rgba(232,146,10,0.025) 40px, rgba(232,146,10,0.025) 41px
+  );
+}
+
+.cultura-hero-inner {
+  max-width: 900px; margin: 0 auto;
+  position: relative; z-index: 1;
+}
+
+.cultura-hero-label {
+  font-family: var(--ff-cond); font-size: 0.72rem; font-weight: 700;
+  letter-spacing: 0.3em; text-transform: uppercase;
+  color: var(--sol); margin-bottom: 1.25rem;
+}
+
+.cultura-hero-title {
+  font-family: var(--ff-display); font-weight: 900;
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  line-height: 1.05; margin-bottom: 1.5rem;
+}
+
+.cultura-hero-title em {
+  font-style: italic; color: var(--sol-vivo);
+}
+
+.cultura-hero-text {
+  font-family: var(--ff-fell); font-style: italic;
+  font-size: 1.1rem; line-height: 1.75;
+  color: rgba(242,226,192,0.75); max-width: 680px;
+}
+
+.cultura-timeline {
+  max-width: 1100px; margin: 0 auto;
+  padding: 5rem 2rem;
+}
+
+.timeline-track {
+  position: relative; padding-left: 60px;
+}
+
+.timeline-track::before {
+  content: ''; position: absolute;
+  left: 20px; top: 0; bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--sol), var(--ceu), var(--verde-caat));
+  border-radius: 2px;
+}
+
+.tl-item {
+  position: relative; margin-bottom: 3.5rem;
+  opacity: 0; transform: translateX(-20px);
+  transition: all 0.6s var(--ease-expo);
+}
+
+.tl-item.visible { opacity: 1; transform: translateX(0); }
+
+.tl-dot {
+  position: absolute; left: -48px; top: 4px;
+  width: 20px; height: 20px; border-radius: 50%;
+  border: 2px solid var(--sol);
+  background: var(--cream);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.6rem;
+}
+
+.tl-year {
+  font-family: var(--ff-cond); font-weight: 900;
+  font-size: 0.75rem; letter-spacing: 0.2em;
+  color: var(--sol); margin-bottom: 0.4rem;
+  text-transform: uppercase;
+}
+
+.tl-title {
+  font-family: var(--ff-display); font-size: 1.3rem;
+  font-weight: 700; color: var(--ink);
+  margin-bottom: 0.5rem;
+}
+
+.tl-text {
+  font-size: 0.92rem; color: var(--dust);
+  line-height: 1.7; font-weight: 300;
+}
+
+.tl-text strong { color: var(--ink); font-weight: 600; }
+
+.influencias-section {
+  background: var(--ink);
+  color: var(--areia); padding: 5rem 2rem;
+}
+
+.influencias-inner { max-width: 1100px; margin: 0 auto; }
+
+.influencias-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 2px; margin-top: 3rem;
+  border-radius: 12px; overflow: hidden;
+}
+
+.influencia-block {
+  padding: 2.5rem 2rem;
+  position: relative; overflow: hidden;
+}
+
+.influencia-block.indigena {
+  background: linear-gradient(135deg, #1A3A1A, #0A1A0A);
+}
+
+.influencia-block.africana {
+  background: linear-gradient(135deg, #3A1A00, #1A0A00);
+}
+
+.influencia-block.europeia {
+  background: linear-gradient(135deg, #0A1A3A, #050A1A);
+}
+
+.inf-icon { font-size: 3rem; display: block; margin-bottom: 1.25rem; }
+
+.inf-title {
+  font-family: var(--ff-display); font-size: 1.4rem;
+  font-weight: 700; margin-bottom: 0.75rem;
+}
+
+.inf-text {
+  font-size: 0.88rem; color: rgba(242,226,192,0.65);
+  line-height: 1.7; font-weight: 300;
+}
+
+.inf-text strong { color: var(--sol-vivo); font-weight: 600; }
+
+.territorios-section {
+  max-width: 1100px; margin: 0 auto; padding: 5rem 2rem;
+}
+
+.territorios-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem; margin-top: 3rem;
+}
+
+.territorio-card {
+  border-radius: 12px; overflow: hidden;
+  border: 1.5px solid rgba(139,58,15,0.12);
+  transition: all 0.3s var(--ease-expo);
+}
+
+.territorio-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--sol);
+}
+
+.territorio-header {
+  padding: 2rem; display: flex; flex-direction: column;
+}
+
+.territorio-emoji { font-size: 2.5rem; margin-bottom: 0.75rem; }
+
+.territorio-name {
+  font-family: var(--ff-display); font-size: 1.2rem;
+  font-weight: 700; color: var(--cream); margin-bottom: 0.35rem;
+}
+
+.territorio-sub {
+  font-size: 0.72rem; color: rgba(242,226,192,0.5);
+  font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase;
+}
+
+.territorio-body { padding: 1.25rem; background: var(--cream); }
+
+.territorio-text {
+  font-size: 0.85rem; color: var(--dust);
+  line-height: 1.6; font-weight: 300;
+}
+
+/* ===== PAGE: MEMÓRIA POPULAR ===== */
+#page-memoria { padding-top: 80px; }
+
+.memoria-hero {
+  background: radial-gradient(ellipse at center, #2A1840 0%, #12090A 70%);
+  color: var(--areia); padding: 5rem 2rem;
+  text-align: center; position: relative; overflow: hidden;
+}
+
+.memoria-hero::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23E8920A' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.memoria-hero-inner {
+  max-width: 800px; margin: 0 auto; position: relative; z-index: 1;
+}
+
+.memoria-hero-icon { font-size: 5rem; display: block; margin-bottom: 1.5rem; }
+
+.memory-pillars {
+  max-width: 1100px; margin: 0 auto; padding: 5rem 2rem;
+}
+
+.pillars-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem; margin-top: 3rem;
+}
+
+.pillar-card {
+  background: var(--cream); border-radius: 12px;
+  border: 1.5px solid rgba(139,58,15,0.1);
+  padding: 2rem; transition: all 0.3s ease;
+  position: relative; overflow: hidden;
+}
+
+.pillar-card::before {
+  content: '';
+  position: absolute; left: 0; top: 0; bottom: 0;
+  width: 4px;
+}
+
+.pillar-card.oral::before { background: var(--sol); }
+.pillar-card.visual::before { background: var(--ceu); }
+.pillar-card.pratica::before { background: var(--verde-caat); }
+.pillar-card.festiva::before { background: var(--terra); }
+.pillar-card.religiosa::before { background: var(--roxo-noite); }
+
+.pillar-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.pillar-icon { font-size: 2.5rem; margin-bottom: 1rem; display: block; }
+
+.pillar-name {
+  font-family: var(--ff-display); font-size: 1.15rem;
+  font-weight: 700; color: var(--ink); margin-bottom: 0.5rem;
+}
+
+.pillar-text {
+  font-size: 0.85rem; color: var(--dust);
+  line-height: 1.6; font-weight: 300;
+}
+
+.depoimentos-section {
+  background: linear-gradient(to right, var(--terra) 0%, var(--ceu-deep) 100%);
+  padding: 5rem 2rem; position: relative; overflow: hidden;
+}
+
+.depoimentos-inner { max-width: 1100px; margin: 0 auto; }
+
+.depoimentos-carousel {
+  margin-top: 3rem; position: relative;
+}
+
+.depoimento-slide {
+  display: none; animation: fadeIn 0.5s ease;
+}
+
+.depoimento-slide.active { display: block; }
+
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+.depoimento-card {
+  background: rgba(255,255,255,0.07); backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 16px; padding: 2.5rem 3rem;
+  position: relative;
+}
+
+.dep-quote-mark {
+  font-family: var(--ff-display); font-size: 5rem;
+  color: rgba(232,146,10,0.25); line-height: 0.5;
+  position: absolute; top: 1.5rem; left: 2rem;
+  font-weight: 900;
+}
+
+.dep-text {
+  font-family: var(--ff-fell); font-style: italic;
+  font-size: 1.2rem; line-height: 1.65;
+  color: var(--areia); margin-bottom: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.dep-author { display: flex; align-items: center; gap: 1rem; }
+
+.dep-avatar {
+  width: 50px; height: 50px; border-radius: 50%;
+  background: linear-gradient(135deg, var(--sol), var(--terra));
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.3rem; flex-shrink: 0;
+}
+
+.dep-name {
+  font-weight: 700; font-size: 0.95rem;
+  color: var(--areia); margin-bottom: 0.15rem;
+}
+
+.dep-info {
+  font-size: 0.75rem; color: rgba(242,226,192,0.5);
+  letter-spacing: 0.08em;
+}
+
+.carousel-nav {
+  display: flex; align-items: center; gap: 0.75rem;
+  margin-top: 1.75rem;
+}
+
+.carousel-btn {
+  background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.15);
+  color: var(--areia); width: 40px; height: 40px;
+  border-radius: 50%; cursor: pointer; font-size: 1rem;
+  transition: all 0.2s ease; display: flex;
+  align-items: center; justify-content: center;
+}
+
+.carousel-btn:hover { background: var(--sol); border-color: var(--sol); }
+
+.carousel-dots { display: flex; gap: 0.5rem; }
+
+.c-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: rgba(255,255,255,0.25); cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.c-dot.active { background: var(--sol); transform: scale(1.3); }
+
+/* ===== PAGE: MAPA CULTURAL ===== */
+#page-mapa { padding-top: 80px; }
+
+.mapa-hero {
+  background: linear-gradient(135deg, var(--verde-caat) 0%, var(--ceu-deep) 50%, var(--ink) 100%);
+  color: var(--areia); padding: 4rem 2rem; text-align: center;
+}
+
+.mapa-container {
+  max-width: 1200px; margin: 0 auto; padding: 4rem 2rem;
+  display: grid; grid-template-columns: 1fr 1.2fr;
+  gap: 3rem; align-items: start;
+}
+
+.mapa-svg-wrap {
+  background: var(--cream); border-radius: 16px;
+  border: 1.5px solid rgba(139,58,15,0.12);
+  padding: 1.5rem; box-shadow: var(--shadow-md);
+  position: sticky; top: 84px;
+}
+
+.mapa-svg-wrap svg {
+  width: 100%; height: auto; display: block;
+}
+
+.mapa-region {
+  fill: #D4C5A0; stroke: var(--cream);
+  stroke-width: 2; cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.mapa-region:hover, .mapa-region.selected {
+  fill: var(--sol);
+  filter: drop-shadow(0 4px 12px rgba(232,146,10,0.4));
+}
+
+.mapa-region.r-noroeste { fill: #C8B88A; }
+.mapa-region.r-norte { fill: #BEA87A; }
+.mapa-region.r-metropolitana { fill: #D4A870; }
+.mapa-region.r-sertao { fill: #C8B07A; }
+.mapa-region.r-centro-sul { fill: #B8C8A8; }
+.mapa-region.r-sul { fill: #A8B898; }
+.mapa-region.r-jaguaribe { fill: #C0B880; }
+
+.mapa-region:hover { fill: var(--sol-vivo); }
+.mapa-region.selected { fill: var(--terra); }
+
+.mapa-info-panel {
+  min-height: 400px;
+}
+
+.mapa-empty {
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  text-align: center; padding: 3rem;
+  color: var(--dust); height: 100%;
+}
+
+.mapa-empty-icon { font-size: 3.5rem; margin-bottom: 1rem; opacity: 0.4; }
+
+.region-detail { animation: fadeUp 0.5s ease; }
+
+.region-header {
+  background: var(--ink); color: var(--areia);
+  border-radius: 12px; padding: 2rem; margin-bottom: 1.25rem;
+}
+
+.region-name {
+  font-family: var(--ff-display); font-size: 1.8rem;
+  font-weight: 900; margin-bottom: 0.3rem;
+}
+
+.region-sub {
+  font-size: 0.75rem; color: var(--sol);
+  font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase;
+}
+
+.region-manifestacoes {
+  display: flex; flex-direction: column; gap: 0.85rem;
+}
+
+.manifestacao-item {
+  background: var(--cream); border-radius: 8px;
+  border: 1px solid rgba(139,58,15,0.1);
+  padding: 1rem 1.25rem;
+  display: flex; gap: 1rem; align-items: flex-start;
+  transition: all 0.2s ease;
+}
+
+.manifestacao-item:hover {
+  border-color: var(--sol);
+  background: rgba(232,146,10,0.04);
+}
+
+.manifestacao-emoji { font-size: 1.8rem; flex-shrink: 0; }
+
+.manifestacao-name {
+  font-weight: 700; font-size: 0.92rem;
+  color: var(--ink); margin-bottom: 0.2rem;
+}
+
+.manifestacao-text {
+  font-size: 0.8rem; color: var(--dust);
+  line-height: 1.5; font-weight: 300;
+}
+
+/* ===== FOOTER ===== */
+#footer {
+  background: var(--ink);
+  color: var(--areia); padding: 4rem 2rem 2rem;
+}
+
+.footer-inner {
+  max-width: 1200px; margin: 0 auto;
+  display: grid; grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 3rem; margin-bottom: 3rem;
+}
+
+.footer-brand {}
+
+.footer-brand-logo {
+  font-family: var(--ff-cond); font-size: 1.8rem;
+  font-weight: 900; letter-spacing: 0.05em;
+  background: linear-gradient(135deg, var(--sol-vivo), var(--sol));
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  background-clip: text; margin-bottom: 0.75rem;
+}
+
+.footer-brand-text {
+  font-size: 0.85rem; color: var(--dust-light);
+  line-height: 1.6; font-weight: 300;
+}
+
+.footer-col-title {
+  font-size: 0.7rem; font-weight: 700;
+  letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--sol); margin-bottom: 1.25rem;
+}
+
+.footer-links { list-style: none; display: flex; flex-direction: column; gap: 0.6rem; }
+
+.footer-links a {
+  color: var(--dust-light); text-decoration: none;
+  font-size: 0.85rem; transition: color 0.2s ease;
+}
+
+.footer-links a:hover { color: var(--sol); }
+
+.footer-bottom {
+  border-top: 1px solid rgba(242,226,192,0.08);
+  padding-top: 2rem; display: flex;
+  justify-content: space-between; align-items: center;
+  flex-wrap: wrap; gap: 1rem;
+}
+
+.footer-copy {
+  font-size: 0.78rem; color: var(--dust);
+  font-family: var(--ff-fell); font-style: italic;
+}
+
+.footer-refs {
+  font-size: 0.72rem; color: var(--dust);
+  letter-spacing: 0.06em;
+}
+
+/* ===== SEARCH MODAL ===== */
+#search-modal {
+  position: fixed; inset: 0; z-index: 400;
+  background: rgba(12,6,8,0.9); backdrop-filter: blur(16px);
+  display: flex; align-items: flex-start; justify-content: center;
+  padding-top: 80px;
+  opacity: 0; pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+
+#search-modal.open { opacity: 1; pointer-events: all; }
+
+.search-modal-inner {
+  background: var(--cream); border-radius: 16px;
+  width: 100%; max-width: 640px; overflow: hidden;
+  transform: translateY(-20px);
+  transition: transform 0.3s var(--ease-expo);
+  box-shadow: var(--shadow-lg);
+}
+
+#search-modal.open .search-modal-inner { transform: translateY(0); }
+
+.search-modal-input {
+  display: flex; align-items: center; gap: 0.75rem;
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid rgba(139,58,15,0.1);
+}
+
+.search-modal-input input {
+  flex: 1; border: none; outline: none; background: none;
+  font-family: var(--ff-body); font-size: 1.1rem;
+  color: var(--ink);
+}
+
+.search-results-list {
+  max-height: 420px; overflow-y: auto;
+  padding: 0.75rem;
+}
+
+.search-result-item {
+  display: flex; align-items: center; gap: 1rem;
+  padding: 0.85rem 1rem; border-radius: 8px;
+  cursor: pointer; transition: background 0.2s ease;
+}
+
+.search-result-item:hover { background: var(--areia-pale); }
+
+.search-result-emoji { font-size: 1.8rem; }
+
+.search-result-name {
+  font-weight: 600; font-size: 0.95rem; color: var(--ink);
+}
+
+.search-result-cat {
+  font-size: 0.75rem; color: var(--dust); margin-top: 0.1rem;
+}
+
+/* ===== UTILITIES ===== */
+.container { max-width: 1400px; margin: 0 auto; padding: 0 2rem; }
+
+.btn {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  padding: 0.75rem 1.75rem; border-radius: 100px;
+  font-family: var(--ff-body); font-size: 0.82rem;
+  font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+  cursor: pointer; text-decoration: none; border: none;
+  transition: all 0.25s ease; white-space: nowrap;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--sol), var(--terra));
+  color: var(--cream);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(232,146,10,0.4);
+}
+
+.btn-ghost {
+  background: transparent; color: var(--areia);
+  border: 1.5px solid rgba(242,226,192,0.25);
+}
+
+.btn-ghost:hover {
+  border-color: var(--sol); color: var(--sol);
+}
+
+.reveal {
+  opacity: 0; transform: translateY(24px);
+  transition: opacity 0.6s var(--ease-expo), transform 0.6s var(--ease-expo);
+}
+
+.reveal.visible { opacity: 1; transform: translateY(0); }
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  .footer-inner { grid-template-columns: 1fr 1fr; }
+  .influencias-grid { grid-template-columns: 1fr; }
+  .mapa-container { grid-template-columns: 1fr; }
+  .mapa-svg-wrap { position: static; }
+}
+
+@media (max-width: 768px) {
+  .nav-links { display: none; }
+  .nav-links.open {
+    display: flex; flex-direction: column;
+    position: fixed; top: 64px; left: 0; right: 0;
+    background: rgba(18,9,10,0.98); padding: 1.5rem;
+    gap: 0.25rem; z-index: 199;
+  }
+  .hamburger { display: flex; }
+  .hero-stats { gap: 1.5rem; }
+  .modal-body { padding: 1.5rem; }
+  .modal-hero { padding: 2rem 1.5rem; }
+  .footer-inner { grid-template-columns: 1fr 1fr; gap: 2rem; }
+  .depoimento-card { padding: 1.5rem; }
+}
+
+@media (max-width: 480px) {
+  .categories-grid { grid-template-columns: 1fr; }
+  .footer-inner { grid-template-columns: 1fr; }
+  .territorios-grid { grid-template-columns: 1fr; }
+  .pillars-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header id="header">
+  <div class="header-inner">
+    <a class="logo" href="#" onclick="showPage('home'); return false;">
+      <span class="logo-mark">CEcult+</span>
+      <span class="logo-sub">Portal de Cultura Cearense</span>
+    </a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#" onclick="showPage('home'); return false;" data-page="home">Início</a></li>
+      <li><a href="#" onclick="showPage('cultura'); return false;" data-page="cultura">Cultura Cearense</a></li>
+      <li><a href="#" onclick="showPage('memoria'); return false;" data-page="memoria">Memória Popular</a></li>
+      <li><a href="#" onclick="showPage('mapa'); return false;" data-page="mapa">Mapa Cultural</a></li>
+    </ul>
+    <div style="display:flex;align-items:center;gap:0.75rem;">
+      <button class="nav-search-btn" onclick="openSearch()">🔍 Buscar</button>
+      <button class="hamburger" id="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ===== PAGES ===== -->
+<div id="pages-container">
+
+  <!-- PAGE: HOME -->
+  <div id="page-home" class="page active">
+
+    <!-- HERO -->
+    <section id="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-pattern"></div>
+      <div class="hero-content">
+        <div class="hero-eyebrow">Portal de Referência Cultural</div>
+        <h1 class="hero-title">A alma<br>do <em>Ceará</em><br>em um só lugar</h1>
+        <p class="hero-desc">Diversidade, memória e identidade — explore as manifestações culturais que formam o espírito cearense desde os tempos pré-coloniais até a contemporaneidade.</p>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <div class="hero-stat-num">22+</div>
+            <div class="hero-stat-label">Categorias Culturais</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-num">7</div>
+            <div class="hero-stat-label">Mesorregiões</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-num">300+</div>
+            <div class="hero-stat-label">Anos de História</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-num">184</div>
+            <div class="hero-stat-label">Municípios</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-scroll"><div class="scroll-line"></div> Role para explorar</div>
+    </section>
+
+    <!-- CATEGORIES -->
+    <section id="categories-section">
+      <div class="section-header reveal">
+        <div class="section-label">Explorar</div>
+        <h2 class="section-title">Manifestações da <em>Cultura Cearense</em></h2>
+        <p class="section-intro">Clique em qualquer categoria para aprofundar-se em sua história, contextos e significados.</p>
+      </div>
+
+      <div class="search-filter-bar">
+        <div class="search-field">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="cat-search" placeholder="Buscar manifestação cultural..." oninput="filterCategories(this.value)">
+        </div>
+        <div class="filter-chips">
+          <button class="chip active" onclick="setFilter('todas', this)">Todas</button>
+          <button class="chip" onclick="setFilter('patrimônio', this)">Patrimônio</button>
+          <button class="chip" onclick="setFilter('artes', this)">Artes</button>
+          <button class="chip" onclick="setFilter('festas', this)">Festas</button>
+          <button class="chip" onclick="setFilter('saberes', this)">Saberes</button>
+          <button class="chip" onclick="setFilter('contemporâneo', this)">Contemporâneo</button>
+        </div>
+      </div>
+
+      <div class="categories-grid" id="categories-grid">
+        <!-- Filled by JS -->
+      </div>
+    </section>
+  </div>
+
+  <!-- PAGE: CULTURA CEARENSE -->
+  <div id="page-cultura" class="page">
+    <div class="cultura-hero">
+      <div class="cultura-hero-inner">
+        <div class="cultura-hero-label">📖 Panorama Histórico</div>
+        <h1 class="cultura-hero-title">Cultura<br><em>Cearense</em></h1>
+        <p class="cultura-hero-text">Do período pré-colonial à contemporaneidade — uma jornada pelas influências, territórios e transformações que moldaram a identidade única do povo cearense.</p>
+      </div>
+    </div>
+
+    <div class="cultura-timeline">
+      <div class="section-header reveal" style="text-align:left;margin-bottom:3rem;max-width:none;">
+        <div class="section-label" style="justify-content:flex-start;">Linha do Tempo</div>
+        <h2 class="section-title">Da Pré-história ao<br><em>Tempo Presente</em></h2>
+      </div>
+      <div class="timeline-track" id="timeline-track">
+        <!-- Filled by JS -->
+      </div>
+    </div>
+
+    <div class="influencias-section">
+      <div class="influencias-inner">
+        <div class="section-header reveal" style="text-align:left;max-width:none;margin-bottom:0;">
+          <div class="section-label" style="justify-content:flex-start;">Formação Identitária</div>
+          <h2 class="section-title" style="color:var(--areia)">As três raízes da<br><em>identidade cearense</em></h2>
+        </div>
+        <div class="influencias-grid" id="influencias-grid"></div>
+      </div>
+    </div>
+
+    <div class="territorios-section">
+      <div class="section-header reveal">
+        <div class="section-label">Territórios</div>
+        <h2 class="section-title">Geografia e <em>Identidade</em></h2>
+        <p class="section-intro">Cada território do Ceará gerou práticas culturais distintas, moldadas pelo clima, pela paisagem e pelas comunidades que os habitam.</p>
+      </div>
+      <div class="territorios-grid" id="territorios-grid"></div>
+    </div>
+  </div>
+
+  <!-- PAGE: MEMÓRIA POPULAR -->
+  <div id="page-memoria" class="page">
+    <div class="memoria-hero">
+      <div class="memoria-hero-inner">
+        <span class="memoria-hero-icon">🧠</span>
+        <div class="section-label" style="justify-content:center;color:var(--sol);">Memória & Identidade</div>
+        <h1 class="section-title" style="color:var(--areia);font-size:clamp(2rem,5vw,4rem);">Memória <em style="color:var(--sol-vivo)">Popular</em></h1>
+        <p class="section-intro" style="color:rgba(242,226,192,0.65);max-width:600px;margin:0 auto;">Como o Ceará lembra, conta e preserva a si mesmo através das gerações.</p>
+      </div>
+    </div>
+
+    <div class="memory-pillars">
+      <div class="section-header reveal">
+        <div class="section-label">Tradições Vivas</div>
+        <h2 class="section-title">Os Pilares da<br><em>Memória Cearense</em></h2>
+        <p class="section-intro">A memória coletiva cearense se sustenta em práticas, saberes e formas de transmissão que resistem ao tempo.</p>
+      </div>
+      <div class="pillars-grid" id="pillars-grid"></div>
+    </div>
+
+    <div class="depoimentos-section">
+      <div class="depoimentos-inner">
+        <div class="section-header reveal" style="text-align:left;max-width:none;">
+          <div class="section-label" style="justify-content:flex-start;color:var(--sol);">Vozes do Ceará</div>
+          <h2 class="section-title" style="color:var(--areia)">Quem <em>conta</em><br>preserva</h2>
+        </div>
+        <div class="depoimentos-carousel" id="depoimentos-carousel"></div>
+      </div>
+    </div>
+
+    <div style="max-width:1100px;margin:0 auto;padding:5rem 2rem;">
+      <div class="section-header reveal">
+        <div class="section-label">Reflexão</div>
+        <h2 class="section-title">Memória como <em>Resistência</em></h2>
+      </div>
+      <div id="memoria-reflexao" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.5rem;"></div>
+    </div>
+  </div>
+
+  <!-- PAGE: MAPA CULTURAL -->
+  <div id="page-mapa" class="page">
+    <div class="mapa-hero">
+      <div class="section-label" style="justify-content:center;color:var(--sol);">🗺️ Território & Cultura</div>
+      <h1 class="section-title" style="color:var(--areia);font-size:clamp(2rem,5vw,4rem);margin-top:0.75rem;">Mapa <em style="color:var(--sol-vivo)">Cultural</em> do Ceará</h1>
+      <p class="section-intro" style="color:rgba(242,226,192,0.65);">Clique em uma mesorregião para descobrir suas manifestações culturais únicas.</p>
+    </div>
+
+    <div class="mapa-container">
+      <div class="mapa-svg-wrap">
+        <svg viewBox="0 0 500 480" id="mapa-ceara">
+          <!-- Ceará stylized SVG map by mesoregiões -->
+          <g id="regioes-map">
+            <!-- Noroeste Cearense -->
+            <path class="mapa-region r-noroeste" id="reg-noroeste"
+              d="M 80 40 L 200 35 L 210 80 L 195 120 L 160 130 L 120 110 L 85 95 Z"
+              onclick="selectRegion('noroeste')"/>
+            <text x="145" y="88" font-family="Barlow Condensed" font-weight="700" font-size="10" fill="var(--ink)" text-anchor="middle" pointer-events="none">NOROESTE</text>
+
+            <!-- Norte Cearense -->
+            <path class="mapa-region r-norte" id="reg-norte"
+              d="M 200 35 L 320 30 L 340 60 L 330 100 L 295 115 L 255 105 L 210 80 Z"
+              onclick="selectRegion('norte')"/>
+            <text x="268" y="78" font-family="Barlow Condensed" font-weight="700" font-size="10" fill="var(--ink)" text-anchor="middle" pointer-events="none">NORTE</text>
+
+            <!-- Metropolitana de Fortaleza -->
+            <path class="mapa-region r-metropolitana" id="reg-metropolitana"
+              d="M 320 30 L 420 40 L 430 90 L 400 120 L 365 115 L 340 60 Z"
+              onclick="selectRegion('metropolitana')"/>
+            <text x="375" y="78" font-family="Barlow Condensed" font-weight="700" font-size="9" fill="var(--ink)" text-anchor="middle" pointer-events="none">METROPOL.</text>
+
+            <!-- Sertões Cearenses -->
+            <path class="mapa-region r-sertao" id="reg-sertao"
+              d="M 85 95 L 120 110 L 160 130 L 195 120 L 210 80 L 255 105 L 295 115 L 280 180 L 250 220 L 210 230 L 165 210 L 120 195 L 90 170 Z"
+              onclick="selectRegion('sertao')"/>
+            <text x="190" y="168" font-family="Barlow Condensed" font-weight="700" font-size="11" fill="var(--ink)" text-anchor="middle" pointer-events="none">SERTÕES</text>
+
+            <!-- Jaguaribe -->
+            <path class="mapa-region r-jaguaribe" id="reg-jaguaribe"
+              d="M 295 115 L 330 100 L 365 115 L 400 120 L 410 170 L 390 215 L 360 230 L 320 225 L 280 180 L 295 115 Z"
+              onclick="selectRegion('jaguaribe')"/>
+            <text x="345" y="175" font-family="Barlow Condensed" font-weight="700" font-size="10" fill="var(--ink)" text-anchor="middle" pointer-events="none">JAGUARIBE</text>
+
+            <!-- Centro-Sul -->
+            <path class="mapa-region r-centro-sul" id="reg-centrosul"
+              d="M 120 195 L 165 210 L 210 230 L 250 220 L 280 180 L 320 225 L 310 290 L 275 330 L 220 340 L 175 315 L 130 280 L 110 245 Z"
+              onclick="selectRegion('centrosul')"/>
+            <text x="215" y="275" font-family="Barlow Condensed" font-weight="700" font-size="10" fill="var(--ink)" text-anchor="middle" pointer-events="none">CENTRO-SUL</text>
+
+            <!-- Sul -->
+            <path class="mapa-region r-sul" id="reg-sul"
+              d="M 130 280 L 175 315 L 220 340 L 275 330 L 310 290 L 360 230 L 390 215 L 395 280 L 370 360 L 310 400 L 250 410 L 185 395 L 140 360 L 115 310 Z"
+              onclick="selectRegion('sul')"/>
+            <text x="255" y="355" font-family="Barlow Condensed" font-weight="700" font-size="11" fill="var(--ink)" text-anchor="middle" pointer-events="none">SUL CEARENSE</text>
+
+            <!-- Compass rose decorative -->
+            <g transform="translate(445, 50)" opacity="0.4">
+              <circle cx="0" cy="0" r="18" fill="none" stroke="var(--sol)" stroke-width="1"/>
+              <text x="0" y="-6" font-size="8" fill="var(--sol)" text-anchor="middle" font-family="Barlow Condensed" font-weight="700">N</text>
+              <line x1="0" y1="0" x2="0" y2="-15" stroke="var(--sol)" stroke-width="1.5"/>
+            </g>
+          </g>
+        </svg>
+        <div style="text-align:center;margin-top:1rem;font-size:0.75rem;color:var(--dust);font-style:italic;">
+          Ceará — 7 Mesorregiões · Clique para explorar
+        </div>
+      </div>
+
+      <div class="mapa-info-panel" id="mapa-info-panel">
+        <div class="mapa-empty" id="mapa-empty">
+          <div class="mapa-empty-icon">🗺️</div>
+          <h3 style="font-family:var(--ff-display);font-size:1.3rem;margin-bottom:0.5rem;color:var(--ink);">Selecione uma região</h3>
+          <p style="font-size:0.9rem;">Clique em qualquer mesorregião no mapa para explorar sua riqueza cultural.</p>
+        </div>
+        <div id="mapa-region-detail" style="display:none;"></div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /pages-container -->
+
+<!-- ===== DETAIL MODAL ===== -->
+<div id="detail-modal" onclick="closeModalIfBg(event)">
+  <div class="modal-inner" id="modal-inner">
+    <button class="modal-close" onclick="closeModal()">✕</button>
+    <div id="modal-content"></div>
+  </div>
+</div>
+
+<!-- ===== SEARCH MODAL ===== -->
+<div id="search-modal" onclick="closeSearchIfBg(event)">
+  <div class="search-modal-inner">
+    <div class="search-modal-input">
+      <span style="font-size:1.1rem;">🔍</span>
+      <input type="text" id="search-input" placeholder="Buscar na cultura cearense..." oninput="performSearch(this.value)" autofocus>
+      <button onclick="closeSearch()" style="background:none;border:none;cursor:pointer;font-size:1.1rem;color:var(--dust);">✕</button>
+    </div>
+    <div class="search-results-list" id="search-results"></div>
+  </div>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer id="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="footer-brand-logo">CEcult+</div>
+      <p class="footer-brand-text">Portal de referência digital sobre a cultura cearense. Preservação, valorização e difusão da identidade e das manifestações culturais do Ceará.</p>
+    </div>
+    <div>
+      <div class="footer-col-title">Seções</div>
+      <ul class="footer-links">
+        <li><a href="#" onclick="showPage('home')">Início</a></li>
+        <li><a href="#" onclick="showPage('cultura')">Cultura Cearense</a></li>
+        <li><a href="#" onclick="showPage('memoria')">Memória Popular</a></li>
+        <li><a href="#" onclick="showPage('mapa')">Mapa Cultural</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Categorias</div>
+      <ul class="footer-links">
+        <li><a href="#" onclick="openCat(1)">Literatura & Cordel</a></li>
+        <li><a href="#" onclick="openCat(7)">Artesanato</a></li>
+        <li><a href="#" onclick="openCat(8)">Culinária</a></li>
+        <li><a href="#" onclick="openCat(5)">Música</a></li>
+        <li><a href="#" onclick="openCat(6)">Festas Populares</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Referências</div>
+      <ul class="footer-links">
+        <li><a href="#">IBGE — Instituto Brasileiro de Estatística</a></li>
+        <li><a href="#">IPHAN — Patrimônio Histórico</a></li>
+        <li><a href="#">SECULT Ceará</a></li>
+        <li><a href="#">Museu do Ceará</a></li>
+        <li><a href="#">UFC — Universidade Federal</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">CEcult+ — Portal de Cultura Cearense · Preservando a identidade do povo cearense</span>
+    <span class="footer-refs">Fontes: IBGE · IPHAN · SECULT-CE · UFC · UECE</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
