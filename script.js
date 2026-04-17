@@ -588,21 +588,15 @@ const CATEGORIES = [
   items: "Saberes do campo",
   content: {
     origin: "O plantio no Ceará tem origem nas práticas indígenas, com cultivo de mandioca e milho adaptados ao clima seco. Com a colonização, culturas como feijão, algodão e cana foram incorporadas. Ao longo do tempo, formou-se um modelo agrícola próprio, baseado na adaptação ao semiárido e na transmissão de saberes entre gerações.",
-
     context: "A agricultura cearense ocorre em um ambiente de chuvas irregulares e longos períodos de seca. A agricultura familiar predomina e é essencial para o abastecimento local. Tecnologias como cisternas e práticas de manejo sustentável têm aumentado a resiliência, embora ainda existam limitações de infraestrutura e acesso a recursos.",
-
     significance: "O plantio estrutura o modo de vida no interior. O calendário agrícola segue o ritmo das chuvas, e práticas como mutirões e conservação de sementes fortalecem a vida comunitária. A culinária regional, baseada em milho, feijão e mandioca, reflete diretamente essa cultura agrícola.",
-
     examples: "No Sertão Central e no Cariri, predominam milho, feijão e mandioca em sistemas tradicionais. Já no Vale do Jaguaribe, a irrigação permite a produção de frutas para exportação, como melão e banana. O algodão também tem retomado espaço com práticas mais sustentáveis.",
-
     impact: "A agricultura é fundamental para a subsistência e geração de renda em muitas regiões. A agricultura familiar contribui para a segurança alimentar e estabilidade social, mas depende de políticas públicas e inovação para enfrentar os desafios climáticos.",
-
     curiosidades: "O Ceará é referência em tecnologias de convivência com o semiárido, como cisternas de captação de água da chuva. Em anos de boa quadra chuvosa, a produção cresce bastante; em períodos de seca, os impactos sociais podem ser significativos.",
-
     quote: { 
-      text: "Quem planta no sertão planta esperança — mesmo sem garantia de chuva.", 
-      author: "Sabedoria popular", 
-      context: "Interior do Ceará" 
+      text: "O sertanejo é, antes de tudo, um forte.", 
+      author: "Euclides da Cunha", 
+      context: "Escritor cearense" 
     },
 
     highlights: [
