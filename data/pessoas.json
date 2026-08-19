@@ -1,0 +1,82 @@
+[
+  {
+    "id": "jose-de-alencar",
+    "nome": "José de Alencar",
+    "area": "literatura",
+    "municipio": "Fortaleza (Mecejana)",
+    "periodo": "1829 — 1877",
+    "resumo": "Escritor e um dos fundadores do romance nacional brasileiro, autor de Iracema.",
+    "obras": ["Iracema", "O Guarani", "Senhora"],
+    "fonte": "academica"
+  },
+  {
+    "id": "patativa-do-assare",
+    "nome": "Patativa do Assaré",
+    "area": "literatura",
+    "municipio": "Assaré",
+    "periodo": "1909 — 2002",
+    "resumo": "Poeta popular, referência máxima da poesia oral e da cultura sertaneja cearense.",
+    "obras": ["Inspiração Nordestina", "Cante Lá que Eu Canto Cá"],
+    "fonte": "academica"
+  },
+  {
+    "id": "raquel-de-queiroz",
+    "nome": "Rachel de Queiroz",
+    "area": "literatura",
+    "municipio": "Fortaleza",
+    "periodo": "1910 — 2003",
+    "resumo": "Primeira mulher eleita para a Academia Brasileira de Letras, autora de O Quinze.",
+    "obras": ["O Quinze", "Memorial de Maria Moura"],
+    "fonte": "academica"
+  },
+  {
+    "id": "padre-cicero",
+    "nome": "Padre Cícero Romão Batista",
+    "area": "religiosidade",
+    "municipio": "Juazeiro do Norte",
+    "periodo": "1844 — 1934",
+    "resumo": "Figura central da religiosidade popular no Cariri, símbolo de devoção e romaria.",
+    "obras": ["Liderança religiosa e política em Juazeiro do Norte"],
+    "fonte": "comunitaria"
+  },
+  {
+    "id": "luiz-gonzaga-referencia",
+    "nome": "Fagner (Raimundo Fagner)",
+    "area": "musica",
+    "municipio": "Orós",
+    "periodo": "1949 —",
+    "resumo": "Cantor e compositor, um dos nomes mais influentes da música popular cearense.",
+    "obras": ["Fagner (1973)", "Traduzir-se"],
+    "fonte": "academica"
+  },
+  {
+    "id": "adisia-sa",
+    "nome": "Exemplo: Mestra artesã de renda de bilro",
+    "area": "artesanato",
+    "municipio": "Aquiraz",
+    "periodo": "Contemporânea",
+    "resumo": "Exemplo demonstrativo de perfil de mestra artesã — dado fictício para fins de exibição.",
+    "obras": ["Peças de renda de bilro tradicional"],
+    "fonte": "exemplo"
+  },
+  {
+    "id": "ze-servo",
+    "nome": "Exemplo: Mestre de cantoria e repente",
+    "area": "musica",
+    "municipio": "Crateús",
+    "periodo": "Contemporânea",
+    "resumo": "Exemplo demonstrativo de perfil de repentista — dado fictício para fins de exibição.",
+    "obras": ["Cantorias registradas em festivais regionais"],
+    "fonte": "exemplo"
+  },
+  {
+    "id": "arquiteta-sobral",
+    "nome": "Exemplo: Pesquisadora do patrimônio de Sobral",
+    "area": "patrimonio",
+    "municipio": "Sobral",
+    "periodo": "Contemporânea",
+    "resumo": "Exemplo demonstrativo de perfil de pesquisadora — dado fictício para fins de exibição.",
+    "obras": ["Levantamento do patrimônio arquitetônico do centro histórico"],
+    "fonte": "exemplo"
+  }
+]

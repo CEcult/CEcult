@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Acervo CEcult+ · CEcult+</title>
+<meta name="description" content="Galeria fotográfica, arquivo digital e a ferramenta Ceará Ontem x Hoje.">
+<meta property="og:title" content="Acervo CEcult+ · CEcult+">
+<meta property="og:description" content="Galeria fotográfica, arquivo digital e a ferramenta Ceará Ontem x Hoje.">
+<meta property="og:type" content="website">
+<link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../css/variables.css">
+<link rel="stylesheet" href="../css/global.css">
+<link rel="stylesheet" href="../css/header.css">
+<link rel="stylesheet" href="../css/footer.css">
+<link rel="stylesheet" href="../css/cards.css">
+<link rel="stylesheet" href="../css/components.css">
+<link rel="stylesheet" href="../css/responsive.css">
+<link rel="stylesheet" href="../css/gallery.css">
+</head>
+<body>
+
+<a href="#main" class="skip-link">Pular para o conteúdo</a>
+<header class="site-header">
+  <div class="container">
+    <a href="../index.html" class="logo" aria-label="CEcult+, página inicial">
+      <span class="logo-mark"><span></span><span></span><span></span><span></span></span>
+      <span><strong>CE</strong>cult<span class="mais">+</span></span>
+    </a>
+    <nav class="main-nav" aria-label="Navegação principal">
+      <ul><li><a href="explorar.html">Explorar</a></li>
+<li><a href="../pages/explorar.html">Cultura</a></li>
+<li><a href="../pages/explorar.html#patrimonio">Patrimônio</a></li>
+<li><a href="../pages/mapa.html">Territórios</a></li>
+<li><a href="../pages/acervo.html" active>Acervo</a></li>
+<li><a href="../pages/pessoas.html">Pessoas</a></li>
+<li><a href="../pages/agenda.html">Eventos</a></li>
+<li><a href="../pages/mapa.html">Mapa</a></li>
+</ul>
+    </nav>
+    <div class="header-actions">
+      <button class="search-toggle" aria-label="Abrir pesquisa">🔎</button>
+      <a href="explorar.html" class="btn btn-primary btn-sm" style="display:inline-flex;">Explorar o Ceará</a>
+      <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    </div>
+  </div>
+</header>
+
+<div class="drawer-backdrop"></div>
+<aside class="mobile-drawer" aria-label="Menu móvel">
+  <button class="drawer-close btn btn-outline btn-sm">✕ Fechar</button>
+  <ul>
+    <li><a href="explorar.html">Explorar</a></li>
+    <li><a href="mapa.html">Territórios</a></li>
+    <li><a href="acervo.html">Acervo</a></li>
+    <li><a href="pessoas.html">Pessoas</a></li>
+    <li><a href="agenda.html">Eventos</a></li>
+    <li><a href="timeline.html">Linha do Tempo</a></li>
+    <li><a href="quiz.html">Quiz</a></li>
+    <li><a href="rotas.html">Rotas Culturais</a></li>
+    <li><a href="assistente.html">Assistente CEcult+</a></li>
+    <li><a href="sobre.html">Sobre</a></li>
+  </ul>
+</aside>
+
+<div class="search-overlay">
+  <div class="search-panel">
+    <form id="global-search-form">
+      <span>🔎</span>
+      <input type="text" id="global-search-input" placeholder="Buscar pessoas, lugares, eventos, manifestações..." autocomplete="off">
+      <button type="button" class="search-close btn btn-outline btn-sm">Fechar</button>
+    </form>
+    <div class="search-hint">Experimente: "forró", "Cariri", "Padre Cícero", "renda de bilro"</div>
+    <div id="search-results"></div>
+  </div>
+</div>
+
+<main id="main">
+
+<section class="page-hero">
+  <div class="hero-bg"></div>
+  <div class="container">
+    <span class="eyebrow" style="color:rgba(255,249,241,0.8);">Fotografias · Documentos · Memória</span>
+    <h1>Acervo CEcult+</h1>
+    <p>Galeria fotográfica, documentos históricos e a ferramenta Ceará Ontem × Hoje. As imagens abaixo são placeholders ilustrativos.</p>
+  </div>
+</section>
+
+<section class="section container">
+  <div class="section-head">
+    <div>
+      <span class="eyebrow">Ceará Ontem × Hoje</span>
+      <h2>A mesma paisagem, dois tempos</h2>
+    </div>
+  </div>
+  <div class="ontem-hoje" id="acervo-ontem-hoje">
+    <div class="layer ontem foto-placeholder"><span class="foto-label">ONTEM — imagem ilustrativa</span></div>
+    <div class="layer hoje foto-placeholder" style="background:linear-gradient(160deg, var(--laranja), var(--vermelho));"><span class="foto-label">HOJE — imagem ilustrativa</span></div>
+    <div class="oh-handle-line"></div>
+    <span class="oh-label left">ONTEM</span>
+    <span class="oh-label right">HOJE</span>
+    <input type="range" min="0" max="100" value="50" aria-label="Comparar imagem de ontem e hoje">
+  </div>
+</section>
+
+<section class="section" style="background:var(--base-alt);">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Galeria fotográfica</span>
+        <h2>Memória em fotografias</h2>
+        <p>Clique em uma imagem para ampliar.</p>
+      </div>
+    </div>
+    <div class="gallery-grid" id="acervo-gallery"></div>
+  </div>
+</section>
+
+<section class="section container">
+  <div class="section-head">
+    <div>
+      <span class="eyebrow">Arquivo digital</span>
+      <h2>Documentos e publicações</h2>
+      <p>Fotografias, cordéis, mapas, jornais e gravações organizados por categoria.</p>
+    </div>
+  </div>
+  <div class="content-grid" id="acervo-docs"></div>
+</section>
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" aria-label="Fechar">✕</button>
+  <div class="lightbox-inner"></div>
+</div>
+<script>
+
+document.addEventListener('DOMContentLoaded', () => {
+  const D = window.CECULT_DATA || {};
+
+  const gallery = document.querySelector('#acervo-gallery');
+  const galleryItems = (D.municipios || []).concat(D.pessoas || []).slice(0, 12);
+  if (gallery) {
+    gallery.innerHTML = galleryItems.map((item, i) => `
+      <div class="gallery-item" data-title="${item.nome}" data-meta="${item.regiao || item.municipio || ''}" data-label="Exemplo de fotografia — ${item.nome}">
+        <div class="foto-placeholder"><span class="foto-label">${item.nome}</span></div>
+      </div>
+    `).join('');
+  }
+
+  const docs = document.querySelector('#acervo-docs');
+  const tipos = [
+    { tipo: 'Cordel', desc: 'Exemplo de folheto de cordel digitalizado.' },
+    { tipo: 'Jornal histórico', desc: 'Exemplo de página de jornal do interior cearense.' },
+    { tipo: 'Mapa antigo', desc: 'Exemplo de mapa cartográfico do estado.' },
+    { tipo: 'Gravação sonora', desc: 'Exemplo de registro de cantoria ou repente.' },
+    { tipo: 'Manuscrito', desc: 'Exemplo de documento manuscrito de arquivo pessoal.' },
+    { tipo: 'Cartaz', desc: 'Exemplo de cartaz de evento cultural histórico.' }
+  ];
+  if (docs) {
+    docs.innerHTML = tipos.map(t => `
+      <article class="content-card">
+        <div class="cc-media foto-placeholder"><span class="foto-label">${t.tipo}</span></div>
+        <div class="cc-body">
+          <h3>${t.tipo}</h3>
+          <p style="font-size:0.85rem;color:var(--ink-3);">${t.desc}</p>
+          <div class="cc-tags"><span class="fonte-badge fonte-exemplo">Dado de exemplo</span></div>
+        </div>
+      </article>
+    `).join('');
+  }
+
+  document.querySelectorAll('.ontem-hoje').forEach(oh => {
+    const range = oh.querySelector('input[type=range]');
+    const hoje = oh.querySelector('.hoje');
+    const line = oh.querySelector('.oh-handle-line');
+    range.addEventListener('input', () => {
+      hoje.style.clipPath = `inset(0 0 0 ${range.value}%)`;
+      line.style.left = `${range.value}%`;
+    });
+  });
+});
+
+</script>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="../index.html" class="logo">
+          <span class="logo-mark"><span></span><span></span><span></span><span></span></span>
+          <span><strong>CE</strong>cult<span class="mais">+</span></span>
+        </a>
+        <p>Um ecossistema digital para conhecer, preservar, documentar, explorar e valorizar a cultura do Ceará.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explorar</h4>
+        <ul>
+          <li><a href="explorar.html">Grandes áreas</a></li>
+          <li><a href="mapa.html">Mapa cultural</a></li>
+          <li><a href="acervo.html">Acervo e fotografias</a></li>
+          <li><a href="timeline.html">Linha do tempo</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Descobrir</h4>
+        <ul>
+          <li><a href="pessoas.html">Pessoas</a></li>
+          <li><a href="agenda.html">Agenda cultural</a></li>
+          <li><a href="rotas.html">Rotas culturais</a></li>
+          <li><a href="quiz.html">Quiz cultural</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Plataforma</h4>
+        <ul>
+          <li><a href="assistente.html">Assistente CEcult+</a></li>
+          <li><a href="contribua.html">Contribua</a></li>
+          <li><a href="sobre.html">Sobre o projeto</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Fontes e rigor</h4>
+        <ul>
+          <li style="color:rgba(255,249,241,0.65); font-size:0.85rem;">Este é um protótipo com dados demonstrativos. Conteúdos marcados como "exemplo" não representam fatos verificados.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="footer-year"></span> CEcult+ — Plataforma cultural do Ceará (protótipo)</span>
+      <div class="footer-dots"><span></span><span></span><span></span><span></span></div>
+    </div>
+  </div>
+</footer>
+
+<script src="../data/dataset.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/navigation.js"></script>
+<script src="../js/search.js"></script>
+<script src="../js/filters.js"></script>
+<script src="../js/favorites.js"></script>
+<script src="../js/gallery.js"></script>
+</body>
+</html>

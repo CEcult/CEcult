@@ -1,0 +1,134 @@
+[
+  {
+    "id": "fortaleza",
+    "nome": "Fortaleza",
+    "regiao": "Fortaleza e Região Metropolitana",
+    "x": 74, "y": 22,
+    "resumo": "Capital do Ceará, litoral e centro da vida cultural urbana do estado.",
+    "destaques": ["Teatro José de Alencar", "Mercado Central", "Praia de Iracema", "Centro Cultural Dragão do Mar"],
+    "gastronomia": ["Peixada cearense", "Tapioca"],
+    "curiosidade": "Exemplo: o bairro de Iracema leva o nome do romance de José de Alencar, escrito em 1865.",
+    "fonte": "acervo"
+  },
+  {
+    "id": "juazeiro-do-norte",
+    "nome": "Juazeiro do Norte",
+    "regiao": "Cariri",
+    "x": 30, "y": 78,
+    "resumo": "Um dos maiores polos de romaria e cultura popular do Nordeste.",
+    "destaques": ["Estátua do Padre Cícero", "Horto", "Feira do Artesanato do Cariri"],
+    "gastronomia": ["Baião de dois", "Rapadura do Cariri"],
+    "curiosidade": "Exemplo: a cidade recebe romeiros de todo o Nordeste ao longo do ano.",
+    "fonte": "comunitaria"
+  },
+  {
+    "id": "crato",
+    "nome": "Crato",
+    "regiao": "Cariri",
+    "x": 27, "y": 74,
+    "resumo": "Cidade histórica do Cariri, referência em educação e patrimônio geológico.",
+    "destaques": ["Museu de Paleontologia", "Centro Histórico", "Chapada do Araripe"],
+    "gastronomia": ["Galinha caipira com pequi"],
+    "curiosidade": "Exemplo: a região é reconhecida por sua riqueza em fósseis preservados na Chapada do Araripe.",
+    "fonte": "academica"
+  },
+  {
+    "id": "sobral",
+    "nome": "Sobral",
+    "regiao": "Ibiapaba e Norte",
+    "x": 45, "y": 30,
+    "resumo": "Centro histórico e educacional do norte do estado, às margens do Rio Acaraú.",
+    "destaques": ["Theatro São João", "Museu Diocesano", "Centro Histórico Tombado"],
+    "gastronomia": ["Peixe de água doce", "Doces de rapadura"],
+    "curiosidade": "Exemplo: Sobral foi uma das primeiras cidades do interior a ter um teatro construído no século XIX.",
+    "fonte": "academica"
+  },
+  {
+    "id": "aracati",
+    "nome": "Aracati",
+    "regiao": "Litoral Leste",
+    "x": 82, "y": 45,
+    "resumo": "Antiga cidade portuária, com centro histórico colonial preservado.",
+    "destaques": ["Igreja do Rosário", "Centro Histórico", "Canoa Quebrada"],
+    "gastronomia": ["Camarão na moranga", "Peixe frito litorâneo"],
+    "curiosidade": "Exemplo: Aracati foi um importante entreposto comercial no período colonial.",
+    "fonte": "acervo"
+  },
+  {
+    "id": "iguatu",
+    "nome": "Iguatu",
+    "regiao": "Centro-Sul",
+    "x": 45, "y": 62,
+    "resumo": "Polo cultural e econômico do centro-sul cearense, às margens do Rio Jaguaribe.",
+    "destaques": ["Açude Orós (proximidades)", "Centro Cultural"],
+    "gastronomia": ["Peixe do Jaguaribe", "Queijo coalho"],
+    "curiosidade": "Exemplo: a cidade é conhecida como referência regional em comércio e educação.",
+    "fonte": "comunitaria"
+  },
+  {
+    "id": "quixada",
+    "nome": "Quixadá",
+    "regiao": "Sertão Central",
+    "x": 55, "y": 45,
+    "resumo": "Conhecida pelos monólitos graníticos que marcam a paisagem do sertão central.",
+    "destaques": ["Monólito Pedra da Galinha Choca", "Açude Cedro"],
+    "gastronomia": ["Carne de sol", "Feijão verde"],
+    "curiosidade": "Exemplo: os monólitos de Quixadá são formações rochosas com milhões de anos.",
+    "fonte": "academica"
+  },
+  {
+    "id": "canindé",
+    "nome": "Canindé",
+    "regiao": "Sertão Central",
+    "x": 58, "y": 35,
+    "resumo": "Um dos maiores centros de romaria em devoção a São Francisco das Chagas.",
+    "destaques": ["Santuário de São Francisco", "Centro de Romarias"],
+    "gastronomia": ["Comidas típicas de romaria", "Doces regionais"],
+    "curiosidade": "Exemplo: as romarias a Canindé ocorrem principalmente em outubro, mês da festa do padroeiro.",
+    "fonte": "comunitaria"
+  },
+  {
+    "id": "ubajara",
+    "nome": "Ubajara",
+    "regiao": "Ibiapaba",
+    "x": 38, "y": 20,
+    "resumo": "Cidade serrana com clima ameno, patrimônio natural e teleférico icônico.",
+    "destaques": ["Parque Nacional de Ubajara", "Gruta de Ubajara"],
+    "gastronomia": ["Doces de frutas serranas", "Café da Ibiapaba"],
+    "curiosidade": "Exemplo: a Gruta de Ubajara é uma das primeiras cavernas turísticas do Brasil.",
+    "fonte": "academica"
+  },
+  {
+    "id": "russas",
+    "nome": "Russas",
+    "regiao": "Vale do Jaguaribe",
+    "x": 68, "y": 48,
+    "resumo": "Importante polo agrícola e cultural do Vale do Jaguaribe.",
+    "destaques": ["Feira Livre Tradicional", "Margens do Rio Jaguaribe"],
+    "gastronomia": ["Manga do Vale do Jaguaribe", "Peixe de rio"],
+    "curiosidade": "Exemplo: a região é reconhecida pela fruticultura irrigada.",
+    "fonte": "comunitaria"
+  },
+  {
+    "id": "baturite",
+    "nome": "Baturité",
+    "regiao": "Maciço de Baturité",
+    "x": 62, "y": 30,
+    "resumo": "Cidade serrana histórica, com forte tradição cafeeira e patrimônio arquitetônico.",
+    "destaques": ["Centro Histórico", "Estação Ferroviária", "Serra de Baturité"],
+    "gastronomia": ["Café de Baturité", "Banana da serra"],
+    "curiosidade": "Exemplo: a região foi um dos berços da cultura cafeeira no Ceará.",
+    "fonte": "academica"
+  },
+  {
+    "id": "crateus",
+    "nome": "Crateús",
+    "regiao": "Sertão dos Crateús",
+    "x": 30, "y": 35,
+    "resumo": "Principal centro urbano do sertão dos inhamuns, marcado por tradições orais.",
+    "destaques": ["Centro Cultural", "Feira de Artesanato"],
+    "gastronomia": ["Carne de bode", "Doces caseiros"],
+    "curiosidade": "Exemplo: a região preserva forte tradição de repente e cantoria.",
+    "fonte": "comunitaria"
+  }
+]

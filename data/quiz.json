@@ -1,0 +1,12 @@
+[
+  { "categoria": "Literatura", "pergunta": "Qual escritor cearense é autor de 'Iracema'?", "opcoes": ["José de Alencar", "Rachel de Queiroz", "Patativa do Assaré", "Adonias Filho"], "correta": 0 },
+  { "categoria": "Personalidades", "pergunta": "Padre Cícero é uma figura central da religiosidade popular em qual cidade?", "opcoes": ["Sobral", "Juazeiro do Norte", "Crato", "Iguatu"], "correta": 1 },
+  { "categoria": "Geografia", "pergunta": "Quixadá é conhecida principalmente por seus:", "opcoes": ["Monólitos graníticos", "Recifes de coral", "Vulcões", "Dunas móveis"], "correta": 0 },
+  { "categoria": "Música", "pergunta": "Qual gênero musical é considerado uma das bases da cultura popular nordestina, associado à sanfona?", "opcoes": ["Forró", "Bossa nova", "Choro", "Samba-enredo"], "correta": 0 },
+  { "categoria": "Patrimônio", "pergunta": "O Theatro José de Alencar está localizado em qual cidade?", "opcoes": ["Fortaleza", "Sobral", "Aracati", "Crato"], "correta": 0 },
+  { "categoria": "História", "pergunta": "A Confederação do Equador, movimento do qual o Ceará participou, ocorreu em que ano?", "opcoes": ["1824", "1889", "1930", "1945"], "correta": 0 },
+  { "categoria": "Gastronomia", "pergunta": "O baião de dois é um prato tradicional composto principalmente por:", "opcoes": ["Arroz e feijão verde com queijo e carne seca", "Peixe grelhado com legumes", "Macarrão com camarão", "Feijoada completa"], "correta": 0 },
+  { "categoria": "Municípios", "pergunta": "Qual região do Ceará é conhecida por concentrar grande parte das romarias e da cultura religiosa popular?", "opcoes": ["Cariri", "Litoral Leste", "Ibiapaba", "Sertão dos Crateús"], "correta": 0 },
+  { "categoria": "Literatura", "pergunta": "Patativa do Assaré é reconhecido principalmente pela sua poesia:", "opcoes": ["Popular e oral, de temática sertaneja", "Concretista", "Modernista urbana", "Épica clássica"], "correta": 0 },
+  { "categoria": "Patrimônio", "pergunta": "A Gruta de Ubajara está localizada em qual região do Ceará?", "opcoes": ["Ibiapaba", "Cariri", "Litoral Leste", "Vale do Jaguaribe"], "correta": 0 }
+]

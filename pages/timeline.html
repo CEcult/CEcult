@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Linha do Tempo do Ceará · CEcult+</title>
+<meta name="description" content="Uma trilha cronológica pelos acontecimentos históricos e culturais do Ceará.">
+<meta property="og:title" content="Linha do Tempo do Ceará · CEcult+">
+<meta property="og:description" content="Uma trilha cronológica pelos acontecimentos históricos e culturais do Ceará.">
+<meta property="og:type" content="website">
+<link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../css/variables.css">
+<link rel="stylesheet" href="../css/global.css">
+<link rel="stylesheet" href="../css/header.css">
+<link rel="stylesheet" href="../css/footer.css">
+<link rel="stylesheet" href="../css/cards.css">
+<link rel="stylesheet" href="../css/components.css">
+<link rel="stylesheet" href="../css/responsive.css">
+<link rel="stylesheet" href="../css/timeline.css">
+</head>
+<body>
+
+<a href="#main" class="skip-link">Pular para o conteúdo</a>
+<header class="site-header">
+  <div class="container">
+    <a href="../index.html" class="logo" aria-label="CEcult+, página inicial">
+      <span class="logo-mark"><span></span><span></span><span></span><span></span></span>
+      <span><strong>CE</strong>cult<span class="mais">+</span></span>
+    </a>
+    <nav class="main-nav" aria-label="Navegação principal">
+      <ul><li><a href="explorar.html">Explorar</a></li>
+<li><a href="../pages/explorar.html">Cultura</a></li>
+<li><a href="../pages/explorar.html#patrimonio">Patrimônio</a></li>
+<li><a href="../pages/mapa.html">Territórios</a></li>
+<li><a href="../pages/acervo.html">Acervo</a></li>
+<li><a href="../pages/pessoas.html">Pessoas</a></li>
+<li><a href="../pages/agenda.html">Eventos</a></li>
+<li><a href="../pages/mapa.html">Mapa</a></li>
+</ul>
+    </nav>
+    <div class="header-actions">
+      <button class="search-toggle" aria-label="Abrir pesquisa">🔎</button>
+      <a href="explorar.html" class="btn btn-primary btn-sm" style="display:inline-flex;">Explorar o Ceará</a>
+      <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    </div>
+  </div>
+</header>
+
+<div class="drawer-backdrop"></div>
+<aside class="mobile-drawer" aria-label="Menu móvel">
+  <button class="drawer-close btn btn-outline btn-sm">✕ Fechar</button>
+  <ul>
+    <li><a href="explorar.html">Explorar</a></li>
+    <li><a href="mapa.html">Territórios</a></li>
+    <li><a href="acervo.html">Acervo</a></li>
+    <li><a href="pessoas.html">Pessoas</a></li>
+    <li><a href="agenda.html">Eventos</a></li>
+    <li><a href="timeline.html">Linha do Tempo</a></li>
+    <li><a href="quiz.html">Quiz</a></li>
+    <li><a href="rotas.html">Rotas Culturais</a></li>
+    <li><a href="assistente.html">Assistente CEcult+</a></li>
+    <li><a href="sobre.html">Sobre</a></li>
+  </ul>
+</aside>
+
+<div class="search-overlay">
+  <div class="search-panel">
+    <form id="global-search-form">
+      <span>🔎</span>
+      <input type="text" id="global-search-input" placeholder="Buscar pessoas, lugares, eventos, manifestações..." autocomplete="off">
+      <button type="button" class="search-close btn btn-outline btn-sm">Fechar</button>
+    </form>
+    <div class="search-hint">Experimente: "forró", "Cariri", "Padre Cícero", "renda de bilro"</div>
+    <div id="search-results"></div>
+  </div>
+</div>
+
+<main id="main">
+
+<section class="page-hero">
+  <div class="hero-bg"></div>
+  <div class="container">
+    <span class="eyebrow" style="color:rgba(255,249,241,0.8);">História · Cultura · Sociedade</span>
+    <h1>Linha do Tempo do Ceará</h1>
+    <p>Uma trilha cronológica por acontecimentos históricos e culturais que marcaram o estado.</p>
+  </div>
+</section>
+
+<section class="section container">
+  <div class="timeline-filters" id="timeline-filters">
+    <button class="filter-chip active" data-filter="todas">Todas</button>
+    <button class="filter-chip" data-filter="historia">História</button>
+    <button class="filter-chip" data-filter="literatura">Literatura</button>
+    <button class="filter-chip" data-filter="musica">Música</button>
+    <button class="filter-chip" data-filter="religiao">Religião</button>
+    <button class="filter-chip" data-filter="arquitetura">Arquitetura</button>
+    <button class="filter-chip" data-filter="patrimonio">Patrimônio</button>
+    <button class="filter-chip" data-filter="sociedade">Sociedade</button>
+    <button class="filter-chip" data-filter="cultura">Cultura</button>
+  </div>
+  <div class="timeline" id="timeline-list"></div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="../index.html" class="logo">
+          <span class="logo-mark"><span></span><span></span><span></span><span></span></span>
+          <span><strong>CE</strong>cult<span class="mais">+</span></span>
+        </a>
+        <p>Um ecossistema digital para conhecer, preservar, documentar, explorar e valorizar a cultura do Ceará.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explorar</h4>
+        <ul>
+          <li><a href="explorar.html">Grandes áreas</a></li>
+          <li><a href="mapa.html">Mapa cultural</a></li>
+          <li><a href="acervo.html">Acervo e fotografias</a></li>
+          <li><a href="timeline.html">Linha do tempo</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Descobrir</h4>
+        <ul>
+          <li><a href="pessoas.html">Pessoas</a></li>
+          <li><a href="agenda.html">Agenda cultural</a></li>
+          <li><a href="rotas.html">Rotas culturais</a></li>
+          <li><a href="quiz.html">Quiz cultural</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Plataforma</h4>
+        <ul>
+          <li><a href="assistente.html">Assistente CEcult+</a></li>
+          <li><a href="contribua.html">Contribua</a></li>
+          <li><a href="sobre.html">Sobre o projeto</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Fontes e rigor</h4>
+        <ul>
+          <li style="color:rgba(255,249,241,0.65); font-size:0.85rem;">Este é um protótipo com dados demonstrativos. Conteúdos marcados como "exemplo" não representam fatos verificados.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="footer-year"></span> CEcult+ — Plataforma cultural do Ceará (protótipo)</span>
+      <div class="footer-dots"><span></span><span></span><span></span><span></span></div>
+    </div>
+  </div>
+</footer>
+
+<script src="../data/dataset.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/navigation.js"></script>
+<script src="../js/search.js"></script>
+<script src="../js/filters.js"></script>
+<script src="../js/favorites.js"></script>
+<script src="../js/timeline.js"></script>
+</body>
+</html>

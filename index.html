@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cultura cearense, viva e conectada · CEcult+</title>
+<meta name="description" content="CEcult+ é um grande ecossistema digital para conhecer, preservar, documentar, explorar e valorizar a cultura do Ceará.">
+<meta property="og:title" content="Cultura cearense, viva e conectada · CEcult+">
+<meta property="og:description" content="CEcult+ é um grande ecossistema digital para conhecer, preservar, documentar, explorar e valorizar a cultura do Ceará.">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/global.css">
+<link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="css/cards.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/responsive.css">
+
+</head>
+<body>
+
+<a href="#main" class="skip-link">Pular para o conteúdo</a>
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo" aria-label="CEcult+, página inicial">
+      <span class="logo-mark"><span></span><span></span><span></span><span></span></span>
+      <span><strong>CE</strong>cult<span class="mais">+</span></span>
+    </a>
+    <nav class="main-nav" aria-label="Navegação principal">
+      <ul><li><a href="pages/explorar.html">Explorar</a></li>
+<li><a href="pages/explorar.html">Cultura</a></li>
+<li><a href="pages/explorar.html#patrimonio">Patrimônio</a></li>
+<li><a href="pages/mapa.html">Territórios</a></li>
+<li><a href="pages/acervo.html">Acervo</a></li>
+<li><a href="pages/pessoas.html">Pessoas</a></li>
+<li><a href="pages/agenda.html">Eventos</a></li>
+<li><a href="pages/mapa.html">Mapa</a></li>
+</ul>
+    </nav>
+    <div class="header-actions">
+      <button class="search-toggle" aria-label="Abrir pesquisa">🔎</button>
+      <a href="pages/explorar.html" class="btn btn-primary btn-sm" style="display:inline-flex;">Explorar o Ceará</a>
+      <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    </div>
+  </div>
+</header>
+
+<div class="drawer-backdrop"></div>
+<aside class="mobile-drawer" aria-label="Menu móvel">
+  <button class="drawer-close btn btn-outline btn-sm">✕ Fechar</button>
+  <ul>
+    <li><a href="pages/explorar.html">Explorar</a></li>
+    <li><a href="pages/mapa.html">Territórios</a></li>
+    <li><a href="pages/acervo.html">Acervo</a></li>
+    <li><a href="pages/pessoas.html">Pessoas</a></li>
+    <li><a href="pages/agenda.html">Eventos</a></li>
+    <li><a href="pages/timeline.html">Linha do Tempo</a></li>
+    <li><a href="pages/quiz.html">Quiz</a></li>
+    <li><a href="pages/rotas.html">Rotas Culturais</a></li>
+    <li><a href="pages/assistente.html">Assistente CEcult+</a></li>
+    <li><a href="pages/sobre.html">Sobre</a></li>
+  </ul>
+</aside>
+
+<div class="search-overlay">
+  <div class="search-panel">
+    <form id="global-search-form">
+      <span>🔎</span>
+      <input type="text" id="global-search-input" placeholder="Buscar pessoas, lugares, eventos, manifestações..." autocomplete="off">
+      <button type="button" class="search-close btn btn-outline btn-sm">Fechar</button>
+    </form>
+    <div class="search-hint">Experimente: "forró", "Cariri", "Padre Cícero", "renda de bilro"</div>
+    <div id="search-results"></div>
+  </div>
+</div>
+
+<main id="main">
+
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="container hero-content">
+    <div class="hero-eyebrow"><span class="dots"><span></span><span></span><span></span><span></span></span> Um ecossistema digital sobre o Ceará</div>
+    <h1 class="reveal in">Cultura cearense, <em>viva</em>, acessível e conectada</h1>
+    <p class="lede reveal in">Explore histórias, pessoas, lugares, manifestações, obras, saberes e memórias que formam a identidade cultural do Ceará — do sertão ao litoral, do Cariri à capital.</p>
+    <div class="hero-actions reveal in">
+      <a href="pages/explorar.html" class="btn btn-primary">Explorar o Ceará</a>
+      <a href="pages/mapa.html" class="btn btn-light">Descobrir uma história</a>
+    </div>
+    <div class="stat-strip reveal in">
+      <div class="stat-item"><div class="stat-num">184</div><div class="stat-label">Municípios</div></div>
+      <div class="stat-item"><div class="stat-num">Milhares</div><div class="stat-label">de histórias</div></div>
+      <div class="stat-item"><div class="stat-num">∞</div><div class="stat-label">Manifestações culturais</div></div>
+    </div>
+    <p class="text-muted reveal in" style="margin-top:10px;font-size:0.72rem;max-width:60ch;color:rgba(255,249,241,0.55);">Números ilustrativos, não representam contagem oficial do acervo.</p>
+  </div>
+</section>
+
+<section class="section container">
+  <div class="section-head reveal">
+    <div>
+      <span class="eyebrow">Um universo cultural</span>
+      <h2>Explore o Ceará</h2>
+      <p>Uma cultura. Milhares de histórias.</p>
+    </div>
+    <a href="pages/explorar.html" class="btn btn-outline btn-sm">Ver todas as áreas →</a>
+  </div>
+  <div class="cat-grid" id="home-categorias"></div>
+</section>
+
+<section class="section" style="background:var(--base-alt);">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <span class="eyebrow">Cultura é uma rede</span>
+        <h2>Pessoas que fizeram o Ceará</h2>
+        <p>Escritores, artistas, mestres e pensadores que moldaram a identidade cearense.</p>
+      </div>
+      <a href="pages/pessoas.html" class="btn btn-outline btn-sm">Ver todas as pessoas →</a>
+    </div>
+    <div class="content-grid reveal" id="home-pessoas"></div>
+  </div>
+</section>
+
+<section class="section container">
+  <div class="section-head reveal">
+    <div>
+      <span class="eyebrow">184 municípios, um só estado</span>
+      <h2>Mapa Cultural do Ceará</h2>
+      <p>Clique em qualquer município para descobrir sua história, patrimônio, gastronomia e memória.</p>
+    </div>
+    <a href="pages/mapa.html" class="btn btn-outline btn-sm">Abrir mapa completo →</a>
+  </div>
+  <div class="reveal" style="display:grid; grid-template-columns: 1fr 1fr; gap: var(--space-4); align-items:center;">
+    <div>
+      <p class="lede">Cada ponto no mapa é uma porta de entrada: história, patrimônio, pessoas, gastronomia e fotografias — tudo conectado em uma grande rede de conhecimento cultural.</p>
+      <div style="margin-top:var(--space-4);">
+        <button class="btn btn-primary" id="surpreenda-me">🎲 Surpreenda-me com um município</button>
+      </div>
+    </div>
+    <div class="foto-placeholder" style="border-radius:var(--radius-lg); aspect-ratio:4/3;">
+      <span class="foto-label">Mapa interativo do Ceará — exemplo visual</span>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:var(--ink); color:var(--white);">
+  <div class="container">
+    <div class="section-head reveal" style="align-items:flex-start;">
+      <div>
+        <span class="eyebrow" style="color:rgba(255,249,241,0.7);">Ceará ontem × hoje</span>
+        <h2 style="color:var(--white);">A mesma paisagem, dois tempos</h2>
+        <p style="color:rgba(255,249,241,0.7);">Arraste o controle para revelar o passado e o presente de um mesmo lugar.</p>
+      </div>
+    </div>
+    <div class="reveal">
+      <div class="ontem-hoje" id="home-ontem-hoje">
+        <div class="layer ontem foto-placeholder"><span class="foto-label">ONTEM — imagem ilustrativa</span></div>
+        <div class="layer hoje foto-placeholder" style="background:linear-gradient(160deg, var(--azul), var(--verde));"><span class="foto-label">HOJE — imagem ilustrativa</span></div>
+        <div class="oh-handle-line"></div>
+        <span class="oh-label left">ONTEM</span>
+        <span class="oh-label right">HOJE</span>
+        <input type="range" min="0" max="100" value="50" aria-label="Comparar imagem de ontem e hoje">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section container">
+  <div class="section-head reveal">
+    <div>
+      <span class="eyebrow">Curiosidades</span>
+      <h2>Você sabia?</h2>
+    </div>
+  </div>
+  <div class="reveal curiosidade-card" id="home-curiosidade">
+    <div class="lamp">💡</div>
+    <blockquote id="curiosidade-texto">Carregando curiosidade...</blockquote>
+    <div class="curiosidade-nav">
+      <button class="btn btn-outline btn-sm" id="curiosidade-anterior">← Anterior</button>
+      <button class="btn btn-outline btn-sm" id="curiosidade-proxima">Próxima →</button>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:var(--base-alt);">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <span class="eyebrow">Explore de outra forma</span>
+        <h2>Um portal, muitas portas de entrada</h2>
+      </div>
+    </div>
+    <div class="cat-grid reveal">
+      <a class="cat-card c-vermelho" href="pages/timeline.html"><div class="cat-icon">🕰️</div><h3>Linha do Tempo</h3><p>Acontecimentos históricos e culturais em ordem cronológica.</p></a>
+      <a class="cat-card c-laranja" href="pages/quiz.html"><div class="cat-icon">🧠</div><h3>Quiz Cultural</h3><p>Teste seus conhecimentos sobre o Ceará e ganhe XP.</p></a>
+      <a class="cat-card c-verde" href="pages/rotas.html"><div class="cat-icon">🗺️</div><h3>Rotas Culturais</h3><p>Monte um roteiro de acordo com seu tempo e interesses.</p></a>
+      <a class="cat-card c-azul" href="pages/assistente.html"><div class="cat-icon">🤖</div><h3>Assistente CEcult+</h3><p>Pergunte sobre pessoas, lugares e manifestações do acervo.</p></a>
+    </div>
+  </div>
+</section>
+<script>
+
+document.addEventListener('DOMContentLoaded', () => {
+  const D = window.CECULT_DATA || {};
+
+  // Categorias em destaque
+  const catGrid = document.querySelector('#home-categorias');
+  if (catGrid) {
+    catGrid.innerHTML = (D.categorias || []).slice(0, 8).map(c => `
+      <a class="cat-card c-${c.cor}" href="explorar.html#${c.id}">
+        <div class="cat-icon">${c.icone}</div>
+        <h3>${c.nome}</h3>
+        <p>${c.descricao}</p>
+        <div class="cat-count">${c.subcategorias.length} subcategorias</div>
+      </a>
+    `).join('');
+  }
+
+  // Pessoas em destaque
+  const pplGrid = document.querySelector('#home-pessoas');
+  if (pplGrid) {
+    pplGrid.innerHTML = (D.pessoas || []).slice(0, 4).map(p => `
+      <a class="content-card" href="pessoas.html?pessoa=${p.id}">
+        <div class="cc-media foto-placeholder"><span class="foto-label">${p.nome}</span></div>
+        <div class="cc-body">
+          <h3>${p.nome}</h3>
+          <div class="cc-meta">${p.municipio} · ${p.periodo}</div>
+          <div class="cc-tags"><span class="tag c-vermelho"><span class="tag-dot"></span>${p.area}</span></div>
+        </div>
+      </a>
+    `).join('');
+  }
+
+  // Curiosidades rotativas
+  const curiosidades = (D.timeline || []).map(t => `💡 ${t.descricao}`);
+  let ci = 0;
+  const texto = document.querySelector('#curiosidade-texto');
+  function showCuriosidade() {
+    if (texto && curiosidades.length) texto.textContent = curiosidades[ci];
+  }
+  document.querySelector('#curiosidade-proxima')?.addEventListener('click', () => {
+    ci = (ci + 1) % curiosidades.length; showCuriosidade();
+  });
+  document.querySelector('#curiosidade-anterior')?.addEventListener('click', () => {
+    ci = (ci - 1 + curiosidades.length) % curiosidades.length; showCuriosidade();
+  });
+  showCuriosidade();
+
+  // Ontem x Hoje slider
+  const oh = document.querySelector('#home-ontem-hoje');
+  if (oh) {
+    const range = oh.querySelector('input[type=range]');
+    const hoje = oh.querySelector('.hoje');
+    const line = oh.querySelector('.oh-handle-line');
+    range.addEventListener('input', () => {
+      hoje.style.clipPath = `inset(0 0 0 ${range.value}%)`;
+      line.style.left = `${range.value}%`;
+    });
+  }
+});
+
+</script>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <span class="logo-mark"><span></span><span></span><span></span><span></span></span>
+          <span><strong>CE</strong>cult<span class="mais">+</span></span>
+        </a>
+        <p>Um ecossistema digital para conhecer, preservar, documentar, explorar e valorizar a cultura do Ceará.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explorar</h4>
+        <ul>
+          <li><a href="pages/explorar.html">Grandes áreas</a></li>
+          <li><a href="pages/mapa.html">Mapa cultural</a></li>
+          <li><a href="pages/acervo.html">Acervo e fotografias</a></li>
+          <li><a href="pages/timeline.html">Linha do tempo</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Descobrir</h4>
+        <ul>
+          <li><a href="pages/pessoas.html">Pessoas</a></li>
+          <li><a href="pages/agenda.html">Agenda cultural</a></li>
+          <li><a href="pages/rotas.html">Rotas culturais</a></li>
+          <li><a href="pages/quiz.html">Quiz cultural</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Plataforma</h4>
+        <ul>
+          <li><a href="pages/assistente.html">Assistente CEcult+</a></li>
+          <li><a href="pages/contribua.html">Contribua</a></li>
+          <li><a href="pages/sobre.html">Sobre o projeto</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Fontes e rigor</h4>
+        <ul>
+          <li style="color:rgba(255,249,241,0.65); font-size:0.85rem;">Este é um protótipo com dados demonstrativos. Conteúdos marcados como "exemplo" não representam fatos verificados.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="footer-year"></span> CEcult+ — Plataforma cultural do Ceará (protótipo)</span>
+      <div class="footer-dots"><span></span><span></span><span></span><span></span></div>
+    </div>
+  </div>
+</footer>
+
+<script src="data/dataset.js"></script>
+<script src="js/main.js"></script>
+<script src="js/navigation.js"></script>
+<script src="js/search.js"></script>
+<script src="js/filters.js"></script>
+<script src="js/favorites.js"></script>
+
+</body>
+</html>
