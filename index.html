@@ -1,165 +1,27 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
+<html lang="pt-BR" data-theme="light">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>CEcult+</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="favico.ico" type="image/x-icon">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="CEcult+: portal de cultura, memória e tradições do Ceará." />
+<title>CEcult+ | Cultura do Ceará</title>
+<script>(function(){var d=document.documentElement,t='auto',f=1;try{t=localStorage.getItem('cecult-tema')||'auto';f=parseFloat(localStorage.getItem('cecult-fonte'))||1}catch(e){}d.dataset.theme=t==='auto'?(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light'):t;d.style.setProperty('--fs',f)})()</script>
+<link rel="icon" href="logo.jpg" type="image/jpeg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Public+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-
-    <header>
-        <div class="logo-container" style="display:flex; align-items:center; gap:15px;">
-            <img src="cultura_img_2130a.jpg" alt="Logo CEcult+" style="width:60px; height:60px;" />
-            <h1 style="font-size: 40px; color:#008036; margin:0;">CEcult+</h1>
-            <link rel="shortcut icon" href="favico.ico" type="image/x-icon">
-        </div>
-    </header>
-
-    <nav id="nav-menu" class="hidden">
-        <a href="index.html">Início</a>
-        <a href="cultura-cearense.html">Cultura Cearense</a>
-        <a href="memoria-popular.html">Memória Popular</a>
-        <a href="mapa-cultural.html">Mapa Cultural</a>
-        <a href="cursos.html">Cursos</a>
-        <a href="quem-somos.html">Quem Somos?</a>
-
-    </nav>
-
-    <section class="carousel">
-        <div class="slides">
-            <img src="https://www.ceara.gov.br/wp-content/uploads/2019/04/180728_RESERVA-PITAGUARY_TM02026.jpg" alt="Cultura Indígena" class="slide" />
-            <img src="https://www.ceara.gov.br/wp-content/uploads/2024/03/Ceara-Junino-2023-Fotos_-Thiago-Noze-5-scaled.jpg" alt="Festas Populares" />
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMlBGbvLBmTHNJJqVaifZ8tMjzG0TazQU0Bw&s" alt="Culinária" class="slide" />
-            <img src="https://www.ceara.gov.br/wp-content/uploads/2023/06/WhatsApp-Image-2023-06-22-at-10.40.06.jpeg" alt="Artesanato" class="slide" />
-            <img src="https://www.setur.ce.gov.br/wp-content/uploads/sites/59/2024/06/JERI_GUSTAVO-PELLIZON_3-scaled.jpg" alt="Turismo Cultural" class="slide" />
-        </div>
-    </section>
-
-    <h2 style="text-align: center; color: #008036; margin-top: 2rem;">Descubra a riqueza cultural do Ceará com o CEcult+</h2>
-
-    <main>
-
-        <div class="card">
-            <img src="https://www.ceara.gov.br/wp-content/uploads/2019/04/180728_RESERVA-PITAGUARY_TM02026.jpg" alt="Cultura Indígena" />
-            <p>Cultura Indígena</p><a href="CulturaIndigena.html" class="botao">Ver Agora</a>
-        </div>
-
-        <div class="card">
-            <img src="https://diariodonordeste.verdesmares.com.br/image/contentid/policy:1.3160899:1637253324/Maracatu%20Solar%20-%20Kid%20J%C3%BAnior.jpg?f=16x9&h=574&w=1020&$p$f$h$w=b0a932d" alt="Cultura Quilombola e Afrocearense" />
-            <p>Cultura Quilombola e Afrocearense</p><a href="CulturaAfro.html" class="botao">Ver Agora</a>
-        </div>
-
-        <div class="card">
-            <img src="https://blog.texascenter.com.br/wp-content/uploads/2024/10/maior-cavalgada-do-brasil-2.jpg" alt="Cultura Sertaneja" />
-            <p>Cultura Sertaneja</p><a href="CulturaSertaneja.html" class="botao">Ver Agora</a>
-        </div>
-
-        <div class="card">
-            <img src="https://marsemfim.com.br/wp-content/uploads/2021/09/jangada-na-praia.jpg" alt="Cultura Marítima e Jangadeira" />
-            <p>Cultura Marítima e Jangadeira</p><a href="Jangadeira.html" class="botao">Ver Agora</a>
-        </div>
-
-        <div class="card">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/5/56/O_linguajar_Cearense.jpg" alt="Linguagem e saberes tradicionais" />
-            <p>Linguagem e saberes tradicionais</p><a href="Linguagens.html" class="botao">Ver Agora</a>
-        </div>
-
-        <div class="card">
-            <img src="https://www.juazeirodonorte.ce.gov.br/fotos/28533/Capa28533.jpg" alt="Festas Populares e Religiosas" />
-            <p>Religiosidade Popular e Romarias</p><a href="Romarias.html" class="botao">Ver Agora</a>
-        </div>
-
-        <div class="card">
-            <img src="https://www.ceara.gov.br/wp-content/uploads/2024/03/Ceara-Junino-2023-Fotos_-Thiago-Noze-5-scaled.jpg" alt="Festas Populares e Religiosas" />
-            <p>Festas Populares</p><a href="Festas.html" class="botao">Ver Agora</a>
-        </div>
-
-        <div class="card">
-            <img src="https://www.ceara.gov.br/wp-content/uploads/2023/11/museu-do-ceara.jpg" alt="Patrimônios" />
-            <p>Patrimônios Históricos e Arquitetônicos</p><a href="Patrimônio.html" class="botao">Ver Agora</a>
-        </div>
-
-        <div class="card">
-            <img src="https://www.ceara.gov.br/wp-content/uploads/2023/06/WhatsApp-Image-2023-06-22-at-10.40.06.jpeg" alt="Artesanato" />
-            <p>Artesanato</p><a href="Artesanato.html" class="botao">Ver Agora</a>
-        </div>
-
-        <div class="card">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMlBGbvLBmTHNJJqVaifZ8tMjzG0TazQU0Bw&s" alt="Culinária" />
-            <p>Culinária</p><a href="Culinária.html" class="botao">Ver Agora</a>
-        </div>
-
-        <div class="card">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYaKe0yGPe_Q04AE5FSU52xP75E9kA56Mrvw&s" alt="Folclore" />
-            <p>Folclore</p><a href="Folclore.html" class="botao">Ver Agora</a>
-        </div>
-
-        <div class="card">
-            <img src="https://s2-g1.glbimg.com/7Gu71dzNdT1zetdytxbvuPTGa4Y=/0x0:1968x1312/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2019/S/k/5i749IR2uXyzy9YY0zAA/cordeis.jpg" alt="Literatura e Cordel" />
-            <p>Literatura e Cordel</p><a href="Literatura.html" class="botao">Ver Agora</a>
-        </div>
-
-        <div class="card">
-            <img src="https://www.sesc-ce.com.br/wp-content/uploads/2023/06/SESC_FestadoPaudaBandeira2023_Divulga%C3%A7%C3%A3o1_horizontal-scaled-e1686593483207.jpg" alt="Música" />
-            <p>Música</p><a href="Musica.html" class="botao">Ver Agora</a>
-        </div>
-
-        <div class="card">
-            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSCRHxMgJMjxh33diPBDrt9lsSQ6dkbu6HrmGa-XBsIKHftktD5xY8BjDV_7pUTZ8ogs06xC6buLLlz7ltCzm1AaY-oSqHM1lj8rx3njUw8i2t_b3-li2HNvkjb8E_U9C7TiJxu9flkbU/s1600/Cear%25C3%25A1+-+Volta+ao+Brasil+em+27+Dan%25C3%25A7as+Caba%25C3%25A7ais+do+Cariri.jpg" alt="Dança" />
-            <p>Dança</p><a href="Danca.html" class="botao">Ver Agora</a>
-        </div>
-
-        <div class="card">
-            <img src="https://emtodolugar.facha.edu.br/wp-content/uploads/2022/03/whatsapp-image-2022-03-27-at-14.50.07.jpeg" alt="Teatro e Artes Cênicas" />
-            <p>Teatro e Artes Cênicas</p><a href="Teatro.html" class="botao">Ver Agora</a>
-        </div>
-
-        <div class="card">
-            <img src="https://ims.com.br/wp-content/uploads/2017/06/Rachel-de-Queiroz-_1920.jpg" alt="Artistas" />
-            <p>Artistas</p><a href="Artistas.html" class="botao">Ver Agora</a>
-        </div>
-
-        <div class="card">
-            <img src="https://unifor.br/documents/392166/0/Hist%C3%B3ria+da+Arte+Cearense+-+site+unifor+banner.png/21ecfdbd-00d2-64df-f938-aa89fae06a55?t=1548766523473" alt="Artes Visuais" />
-            <p>Artes Visuais</p><a href="Artes.html" class="botao">Ver Agora</a>
-        </div>
-
-        <div class="card">
-            <img src="https://www.sesc-ce.com.br/wp-content/uploads/2024/05/FestivalHumorCearense-1-e1717002824470.png" alt="Humor e Comédia" />
-            <p>Humor e Comédia</p><a href="Humor.html" class="botao">Ver Agora</a>
-        </div>
-
-        <div class="card">
-            <img src="https://lncimg.lance.com.br/cdn-cgi/image/width=950,quality=75,fit=pad,format=webp/uploads/2026/01/Ceara-x-Iguatu-scaled-aspect-ratio-512-320.jpg" alt="Cultura Esportiva" />
-            <p>Cultura Esportiiva</p><a href="Esporte.html" class="botao">Ver Agora</a>
-        </div>
-
-        <div class="card">
-            <img src="https://diariodonordeste.verdesmares.com.br/verso/cinema-cearense-chega-aos-100-anos-em-busca-de-preservar-memorias-e-fortalecer-cenario-positivo-1.3569227" alt="Cinema e Audiovisual" />
-            <p>Cinema e Audiovisual</p><a href="Cinema.html" class="botao">Ver Agora</a>
-        </div>
-
-        <div class="card">
-            <img src="https://www.opovo.com.br/_midias/jpg/2020/10/27/750x500/1_foto_priscila_smiths_estacao_metrofor_conjunto_ceara_09_600x400-13898818.jpg" alt="Cultura Urbana e Digital" />
-            <p>Cultura Urbana</p><a href="CulturaUrbana.html" class="botao">Ver Agora</a>
-        </div>
-
-        <div class="card">
-            <img src="https://www.ceara.gov.br/wp-content/uploads/2025/11/IMG_7997-scaled.jpg" alt="Cultura científica e do conhecimento" />
-            <p>Cultura científica e do conhecimento</p><a href="Conhecimento.html" class="botao">Ver Agora</a>
-        </div>
-
-    </main>
-
-    <footer style="text-align:center; padding: 1rem 0; background:#f0f0f0; margin-top:2rem;">
-        <p>© 2026 CEcult+. Desenvolvido pela equipe de Desenvolvimento Cultural.</p>
-    </footer>
-
-    <script src="script.js"></script>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<header>
+<a class="logo-container" href="index.html" aria-label="CEcult+ — página inicial"><span class="logo-badge"><img src="logo.jpg" alt="Logo CEcult+" /></span><h1>CEcult+</h1></a>
+<button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-menu">☰</button>
+</header>
+<nav id="nav-menu" aria-label="Principal"><a href="index.html" aria-current="page">Início</a><a href="cultura-cearense.html">Cultura Cearense</a><a href="memoria-popular.html">Memória Popular</a><a href="mapa-cultural.html">Mapa Cultural</a><a href="cursos.html">Cursos</a><a href="quem-somos.html">Quem Somos?</a></nav>
+<section class="carousel"><div class="slides"><figure class="slide"><img loading="lazy" src="https://www.ceara.gov.br/wp-content/uploads/2019/04/180728_RESERVA-PITAGUARY_TM02026.jpg" alt="Cultura Indígena" /><figcaption><a href="CulturaIndigena.html">Cultura Indígena →</a></figcaption></figure><figure class="slide"><img loading="lazy" src="https://www.ceara.gov.br/wp-content/uploads/2024/03/Ceara-Junino-2023-Fotos_-Thiago-Noze-5-scaled.jpg" alt="Festas Populares" /><figcaption><a href="Festas.html">Festas Populares →</a></figcaption></figure><figure class="slide"><img loading="lazy" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMlBGbvLBmTHNJJqVaifZ8tMjzG0TazQU0Bw&s" alt="Culinária" /><figcaption><a href="Culinaria.html">Culinária →</a></figcaption></figure><figure class="slide"><img loading="lazy" src="https://www.ceara.gov.br/wp-content/uploads/2023/06/WhatsApp-Image-2023-06-22-at-10.40.06.jpeg" alt="Artesanato" /><figcaption><a href="Artesanato.html">Artesanato →</a></figcaption></figure><figure class="slide"><img loading="lazy" src="https://www.setur.ce.gov.br/wp-content/uploads/sites/59/2024/06/JERI_GUSTAVO-PELLIZON_3-scaled.jpg" alt="Turismo Cultural" /><figcaption><a href="Turismo.html">Turismo Cultural →</a></figcaption></figure></div></section>
+<h2>Descubra a riqueza cultural do Ceará</h2><p class="sub">Povos, festas, sabores, artes, ciência e memória: 28 temas para conhecer a cultura cearense.</p><div class="busca"><input id="busca" type="search" placeholder="Buscar tema (ex.: música, seca, cordel)" aria-label="Buscar tema" /></div><p class="vazio" id="vazio">Nenhum tema encontrado.</p>
+<main id="conteudo"><div class="card"><img loading="lazy" src="https://www.ceara.gov.br/wp-content/uploads/2019/04/180728_RESERVA-PITAGUARY_TM02026.jpg" alt="Cultura Indígena" /><h3>Cultura Indígena</h3><a href="CulturaIndigena.html" class="botao">Ver Agora</a></div><div class="card"><img loading="lazy" src="https://diariodonordeste.verdesmares.com.br/image/contentid/policy:1.3160899:1637253324/Maracatu%20Solar%20-%20Kid%20J%C3%BAnior.jpg?f=16x9&h=574&w=1020&$p$f$h$w=b0a932d" alt="Cultura Quilombola e Afrocearense" /><h3>Cultura Quilombola e Afrocearense</h3><a href="CulturaAfro.html" class="botao">Ver Agora</a></div><div class="card"><img loading="lazy" src="https://blog.texascenter.com.br/wp-content/uploads/2024/10/maior-cavalgada-do-brasil-2.jpg" alt="Cultura Sertaneja" /><h3>Cultura Sertaneja</h3><a href="CulturaSertaneja.html" class="botao">Ver Agora</a></div><div class="card"><img loading="lazy" src="https://marsemfim.com.br/wp-content/uploads/2021/09/jangada-na-praia.jpg" alt="Cultura Marítima e Jangadeira" /><h3>Cultura Marítima e Jangadeira</h3><a href="Jangadeira.html" class="botao">Ver Agora</a></div><div class="card"><img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/5/56/O_linguajar_Cearense.jpg" alt="Linguagem e saberes tradicionais" /><h3>Linguagem e saberes tradicionais</h3><a href="Linguagens.html" class="botao">Ver Agora</a></div><div class="card"><img loading="lazy" src="https://www.juazeirodonorte.ce.gov.br/fotos/28533/Capa28533.jpg" alt="Religiosidade Popular e Romarias" /><h3>Religiosidade Popular e Romarias</h3><a href="Romarias.html" class="botao">Ver Agora</a></div><div class="card"><img loading="lazy" src="https://www.ceara.gov.br/wp-content/uploads/2024/03/Ceara-Junino-2023-Fotos_-Thiago-Noze-5-scaled.jpg" alt="Festas Populares" /><h3>Festas Populares</h3><a href="Festas.html" class="botao">Ver Agora</a></div><div class="card"><img loading="lazy" src="https://www.ceara.gov.br/wp-content/uploads/2023/11/museu-do-ceara.jpg" alt="Patrimônios Históricos e Arquitetônicos" /><h3>Patrimônios Históricos e Arquitetônicos</h3><a href="Patrimonio.html" class="botao">Ver Agora</a></div><div class="card"><img loading="lazy" src="https://www.ceara.gov.br/wp-content/uploads/2023/06/WhatsApp-Image-2023-06-22-at-10.40.06.jpeg" alt="Artesanato" /><h3>Artesanato</h3><a href="Artesanato.html" class="botao">Ver Agora</a></div><div class="card"><img loading="lazy" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMlBGbvLBmTHNJJqVaifZ8tMjzG0TazQU0Bw&s" alt="Culinária" /><h3>Culinária</h3><a href="Culinaria.html" class="botao">Ver Agora</a></div><div class="card"><img loading="lazy" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYaKe0yGPe_Q04AE5FSU52xP75E9kA56Mrvw&s" alt="Folclore" /><h3>Folclore</h3><a href="Folclore.html" class="botao">Ver Agora</a></div><div class="card"><img loading="lazy" src="https://s2-g1.glbimg.com/7Gu71dzNdT1zetdytxbvuPTGa4Y=/0x0:1968x1312/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2019/S/k/5i749IR2uXyzy9YY0zAA/cordeis.jpg" alt="Literatura e Cordel" /><h3>Literatura e Cordel</h3><a href="Literatura.html" class="botao">Ver Agora</a></div><div class="card"><img loading="lazy" src="https://www.sesc-ce.com.br/wp-content/uploads/2023/06/SESC_FestadoPaudaBandeira2023_Divulga%C3%A7%C3%A3o1_horizontal-scaled-e1686593483207.jpg" alt="Música" /><h3>Música</h3><a href="Musica.html" class="botao">Ver Agora</a></div><div class="card"><img loading="lazy" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSCRHxMgJMjxh33diPBDrt9lsSQ6dkbu6HrmGa-XBsIKHftktD5xY8BjDV_7pUTZ8ogs06xC6buLLlz7ltCzm1AaY-oSqHM1lj8rx3njUw8i2t_b3-li2HNvkjb8E_U9C7TiJxu9flkbU/s1600/Cear%25C3%25A1+-+Volta+ao+Brasil+em+27+Dan%25C3%25A7as+Caba%25C3%25A7ais+do+Cariri.jpg" alt="Dança" /><h3>Dança</h3><a href="Danca.html" class="botao">Ver Agora</a></div><div class="card"><img loading="lazy" src="https://emtodolugar.facha.edu.br/wp-content/uploads/2022/03/whatsapp-image-2022-03-27-at-14.50.07.jpeg" alt="Teatro e Artes Cênicas" /><h3>Teatro e Artes Cênicas</h3><a href="Teatro.html" class="botao">Ver Agora</a></div><div class="card"><img loading="lazy" src="https://ims.com.br/wp-content/uploads/2017/06/Rachel-de-Queiroz-_1920.jpg" alt="Artistas" /><h3>Artistas</h3><a href="Artistas.html" class="botao">Ver Agora</a></div><div class="card"><img loading="lazy" src="https://unifor.br/documents/392166/0/Hist%C3%B3ria+da+Arte+Cearense+-+site+unifor+banner.png/21ecfdbd-00d2-64df-f938-aa89fae06a55?t=1548766523473" alt="Artes Visuais" /><h3>Artes Visuais</h3><a href="Artes.html" class="botao">Ver Agora</a></div><div class="card"><img loading="lazy" src="https://www.sesc-ce.com.br/wp-content/uploads/2024/05/FestivalHumorCearense-1-e1717002824470.png" alt="Humor e Comédia" /><h3>Humor e Comédia</h3><a href="Humor.html" class="botao">Ver Agora</a></div><div class="card"><img loading="lazy" src="https://lncimg.lance.com.br/cdn-cgi/image/width=950,quality=75,fit=pad,format=webp/uploads/2026/01/Ceara-x-Iguatu-scaled-aspect-ratio-512-320.jpg" alt="Cultura Esportiva" /><h3>Cultura Esportiva</h3><a href="Esporte.html" class="botao">Ver Agora</a></div><div class="card"><img loading="lazy" src="https://www.secult.ce.gov.br/wp-content/uploads/sites/43/2025/03/cineteatro-sao-luiz-1-600x400.jpg" alt="Cinema e Audiovisual" /><h3>Cinema e Audiovisual</h3><a href="Cinema.html" class="botao">Ver Agora</a></div><div class="card"><img loading="lazy" src="https://www.opovo.com.br/_midias/jpg/2020/10/27/750x500/1_foto_priscila_smiths_estacao_metrofor_conjunto_ceara_09_600x400-13898818.jpg" alt="Cultura Urbana" /><h3>Cultura Urbana</h3><a href="CulturaUrbana.html" class="botao">Ver Agora</a></div><div class="card"><img loading="lazy" src="https://www.setur.ce.gov.br/wp-content/uploads/sites/59/2024/06/JERI_GUSTAVO-PELLIZON_3-scaled.jpg" alt="Turismo Cultural" /><h3>Turismo Cultural</h3><a href="Turismo.html" class="botao">Ver Agora</a></div><div class="card"><img loading="lazy" src="https://www.ceara.gov.br/wp-content/uploads/2025/11/IMG_7997-scaled.jpg" alt="Cultura científica e do conhecimento" /><h3>Cultura científica e do conhecimento</h3><a href="Conhecimento.html" class="botao">Ver Agora</a></div><div class="card"><div class="ph" aria-hidden="true">🌵</div><h3>Natureza e Caatinga</h3><a href="NaturezaCaatinga.html" class="botao">Ver Agora</a></div><div class="card"><div class="ph" aria-hidden="true">💧</div><h3>Semiárido e Convivência com a Seca</h3><a href="Semiarido.html" class="botao">Ver Agora</a></div><div class="card"><div class="ph" aria-hidden="true">🧶</div><h3>Mestres da Cultura</h3><a href="Mestres.html" class="botao">Ver Agora</a></div><div class="card"><div class="ph" aria-hidden="true">👗</div><h3>Moda e Economia Criativa</h3><a href="EconomiaCriativa.html" class="botao">Ver Agora</a></div><div class="card"><div class="ph" aria-hidden="true">🎓</div><h3>Educação e Universidades</h3><a href="Educacao.html" class="botao">Ver Agora</a></div></main>
+<footer><p>© 2026 CEcult+ · Cultura, memória e tradições do Ceará.</p></footer>
+<script src="script.js"></script>
 </body>
-
 </html>

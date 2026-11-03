@@ -1,80 +1,27 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-theme="light">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>CEcult+ | Música Cearense</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="favico.ico" type="image/x-icon">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="CEcult+: portal de cultura, memória e tradições do Ceará." />
+<title>CEcult+ | Música</title>
+<script>(function(){var d=document.documentElement,t='auto',f=1;try{t=localStorage.getItem('cecult-tema')||'auto';f=parseFloat(localStorage.getItem('cecult-fonte'))||1}catch(e){}d.dataset.theme=t==='auto'?(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light'):t;d.style.setProperty('--fs',f)})()</script>
+<link rel="icon" href="logo.jpg" type="image/jpeg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Public+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
 </head>
 <body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
 <header>
-    <div class="logo-container" style="display:flex; align-items:center; gap:15px;">
-        <img src="Cultura_img_2130a.jpg" alt="Logo CEcult+" style="width:60px; height:60px;" />
-        <h1 style="font-size: 40px; color:#008036; margin:0;">CEcult+</h1>
-    </div>
-    <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+<a class="logo-container" href="index.html" aria-label="CEcult+ — página inicial"><span class="logo-badge"><img src="logo.jpg" alt="Logo CEcult+" /></span><h1>CEcult+</h1></a>
+<button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-menu">☰</button>
 </header>
-<nav id="nav-menu" class="hidden">
-    <a href="index.html">Início</a>
-    <a href="cultura-cearense.html">Cultura Cearense</a>
-    <a href="memoria-popular.html">Memória Popular</a>
-    <a href="mapa-cultural.html">Mapa Cultural</a>
-    <a href="cursos.html">Cursos</a>
-    <a href="quem-somos.html">Quem Somos?</a>
-</nav>
-<section class="carousel">
-    <div class="slides">
-        <img src="https://assets.brasildefato.com.br/2025/05/unnamed.jpg" alt="Tradições musicais do sertão" class="slide" />
-        <img src="https://www.sesc-ce.com.br/wp-content/uploads/2020/10/Casa-Mare%CC%81-2020-2-e1602594759996.jpg" alt="Movimento Pessoal do Ceará" class="slide" />
-        <img src="https://www.secult.ce.gov.br/wp-content/uploads/sites/43/2025/07/BN2_1701-scaled.jpg" alt="Música popular e humor musical" class="slide" />
-        <img src="https://quixada.ce.gov.br/fotos/919/Capa919.jpg" alt="Música religiosa e tradicional" class="slide" />
-        <img src="https://www.ceara.gov.br/wp-content/uploads/2024/01/Carla-Ribeiro-1.jpg" alt="Atualidade e projeção cultural" class="slide" />
-    </div>
-</section>
-
-<h2 style="text-align:center; color:#008036; margin-top:2rem;">Música Cearense</h2>
-
-<section style="max-width:900px; margin:2rem auto; padding:1rem; line-height:1.8; font-size:1.05rem; text-align:justify;">
-<p>A música do Ceará expressa a diversidade cultural e histórica do estado, articulando influências indígenas, africanas, europeias e nordestinas em múltiplas formas sonoras. Do sertão ao litoral, a produção musical cearense combina tradição e inovação, mantendo vivas manifestações populares enquanto dialoga com correntes contemporâneas da música brasileira. Ela não é apenas entretenimento, mas meio de afirmação identitária, crítica social e preservação da memória coletiva.</p>
-
-<h3 style="color:#008036; margin-top:1.5rem;">Tradições musicais do sertão</h3>
-<p>No interior do estado, destacam-se gêneros ligados à cultura sertaneja, como o forró pé-de-serra, o baião e a cantoria de viola. Esses estilos utilizam instrumentos como sanfona, zabumba e triângulo, formando base rítmica característica do Nordeste.
-
-A música sertaneja tradicional cearense também se conecta à poesia oral, especialmente no repente, em que violeiros improvisam versos com rigor métrico e criatividade. Essas práticas preservam técnicas poéticas e musicais transmitidas entre gerações.</p>
-<img src="https://assets.brasildefato.com.br/2025/05/unnamed.jpg" alt="Tradições musicais do sertão" style="width:100%; margin:1rem 0;" />
-
-<h3 style="color:#008036; margin-top:1.5rem;">Movimento Pessoal do Ceará</h3>
-<p>Na década de 1970, surgiu em Fortaleza o chamado Pessoal do Ceará, movimento que projetou artistas locais no cenário nacional. Entre seus principais representantes estão Fagner, Belchior e Ednardo.
-
-Esses músicos combinaram elementos da cultura nordestina com influências da música popular brasileira e da canção urbana, produzindo obras marcadas por lirismo, reflexão social e identidade regional.</p>
-<img src="https://www.sesc-ce.com.br/wp-content/uploads/2020/10/Casa-Mare%CC%81-2020-2-e1602594759996.jpg" alt="Movimento Pessoal do Ceará" style="width:100%; margin:1rem 0;" />
-
-<h3 style="color:#008036; margin-top:1.5rem;">Música popular e humor musical</h3>
-<p>O Ceará também é conhecido pela forte presença do humor na cultura artística, característica que influenciou produções musicais com traços satíricos e linguagem acessível. Canções populares frequentemente incorporam narrativas do cotidiano, ironia e crítica social.
-
-Além disso, bandas e artistas contemporâneos ampliaram o repertório musical local, explorando gêneros como rock, reggae, música eletrônica e pop, mantendo diálogo constante com referências nacionais e internacionais.</p>
-<img src="https://www.secult.ce.gov.br/wp-content/uploads/sites/43/2025/07/BN2_1701-scaled.jpg" alt="Música popular e humor musical" style="width:100%; margin:1rem 0;" />
-
-<h3 style="color:#008036; margin-top:1.5rem;">Música religiosa e tradicional</h3>
-<p>A religiosidade popular também se manifesta na música, especialmente em benditos, hinos e cantos entoados em romarias e festas de padroeiros. Essas expressões reforçam o caráter comunitário da fé e integram o patrimônio imaterial do estado.
-
-Em comunidades litorâneas e rurais, músicas tradicionais acompanham celebrações e eventos coletivos, consolidando a música como elemento estruturante da vida social.</p>
-<img src="https://quixada.ce.gov.br/fotos/919/Capa919.jpg" alt="Música religiosa e tradicional" style="width:100%; margin:1rem 0;" />
-
-<h3 style="color:#008036; margin-top:1.5rem;">Atualidade e projeção cultural</h3>
-<p>Atualmente, a música cearense mantém relevância por meio de festivais, projetos culturais e produção independente. A formação de novos artistas em escolas e centros culturais contribui para a continuidade da tradição musical.
-
-A música do Ceará demonstra capacidade de integrar herança histórica e inovação criativa, funcionando como instrumento de identidade, desenvolvimento cultural e projeção nacional do estado.</p>
-<img src="https://www.ceara.gov.br/wp-content/uploads/2024/01/Carla-Ribeiro-1.jpg" alt="Atualidade e projeção cultural" style="width:100%; margin:1rem 0;" />
-<figcaption style="font-size:0.85rem; color:#555;">Fonte: Governo do Estado do Ceará (https://www.ceara.gov.br)</figcaption>
-
-</section>
-
-<footer style="text-align:center; padding:1rem 0; background:#f0f0f0; margin-top:2rem;">
-    <p>© 2025 Cultura+. Desenvolvido pela equipe de Desenvolvimento Cultural.</p>
-</footer>
-
+<nav id="nav-menu" aria-label="Principal"><a href="index.html">Início</a><a href="cultura-cearense.html" aria-current="page">Cultura Cearense</a><a href="memoria-popular.html">Memória Popular</a><a href="mapa-cultural.html">Mapa Cultural</a><a href="cursos.html">Cursos</a><a href="quem-somos.html">Quem Somos?</a></nav>
+<section class="carousel"><div class="slides"><figure class="slide"><img loading="lazy" src="https://www.sesc-ce.com.br/wp-content/uploads/2023/06/SESC_FestadoPaudaBandeira2023_Divulga%C3%A7%C3%A3o1_horizontal-scaled-e1686593483207.jpg" alt="Música" /></figure><figure class="slide"><img loading="lazy" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSCRHxMgJMjxh33diPBDrt9lsSQ6dkbu6HrmGa-XBsIKHftktD5xY8BjDV_7pUTZ8ogs06xC6buLLlz7ltCzm1AaY-oSqHM1lj8rx3njUw8i2t_b3-li2HNvkjb8E_U9C7TiJxu9flkbU/s1600/Cear%25C3%25A1+-+Volta+ao+Brasil+em+27+Dan%25C3%25A7as+Caba%25C3%25A7ais+do+Cariri.jpg" alt="Dança" /><figcaption><a href="Danca.html">Veja também: Dança →</a></figcaption></figure><figure class="slide"><img loading="lazy" src="https://emtodolugar.facha.edu.br/wp-content/uploads/2022/03/whatsapp-image-2022-03-27-at-14.50.07.jpeg" alt="Teatro e Artes Cênicas" /><figcaption><a href="Teatro.html">Veja também: Teatro e Artes Cênicas →</a></figcaption></figure><figure class="slide"><img loading="lazy" src="https://ims.com.br/wp-content/uploads/2017/06/Rachel-de-Queiroz-_1920.jpg" alt="Artistas" /><figcaption><a href="Artistas.html">Veja também: Artistas →</a></figcaption></figure></div></section>
+<p class="crumb"><a href="cultura-cearense.html">Cultura Cearense</a> › Música</p><h2>Música</h2>
+<section class="conteudo" id="conteudo"><p class="lead">A música cearense vai do baião e do forró às canções de autoria que marcaram a MPB. Ela circula em festas, rádios, praças e palcos, e une tradição e inovação.</p><h3>Raízes do baião e do forró</h3><p>Humberto Teixeira, de Iguatu, foi parceiro de Luiz Gonzaga na criação do baião, ritmo que levou o Nordeste a todo o Brasil. O forró pé de serra, com sanfona, zabumba e triângulo, anima festas e feiras. A Banda Cabaçal dos Irmãos Aniceto, do Crato, preserva a tradição do pífano, instrumento de sopro ligado a festas, novenas e procissões.</p><h3>O Pessoal do Ceará e a MPB</h3><p>Nos anos 1970, o grupo conhecido como Pessoal do Ceará projetou artistas como Fagner, Belchior, Ednardo, Rodger Rogério e Amelinha. Belchior, nascido em Sobral, é autor de clássicos como Como Nossos Pais e Apenas um Rapaz Latino-Americano. Fagner, de Orós, gravou canções que se tornaram hinos de gerações.</p><h3>Música popular hoje</h3><p>Nas últimas décadas, o forró eletrônico criou grandes bandas como Aviões do Forró, e artistas como Wesley Safadão alcançaram projeção nacional. Ao mesmo tempo, jovens compositores, grupos de rap e festivais, como o Jazz & Blues de Guaramiranga, mostram que a cena é plural. Escolas e projetos de formação ajudam a manter esse movimento vivo.</p><p class="fim"><a href="index.html">← Voltar ao início</a> · <a href="cursos.html">Ver cursos de cultura</a></p></section><h2 class="rel">Continue explorando</h2><main><div class="card"><img loading="lazy" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSCRHxMgJMjxh33diPBDrt9lsSQ6dkbu6HrmGa-XBsIKHftktD5xY8BjDV_7pUTZ8ogs06xC6buLLlz7ltCzm1AaY-oSqHM1lj8rx3njUw8i2t_b3-li2HNvkjb8E_U9C7TiJxu9flkbU/s1600/Cear%25C3%25A1+-+Volta+ao+Brasil+em+27+Dan%25C3%25A7as+Caba%25C3%25A7ais+do+Cariri.jpg" alt="Dança" /><h3>Dança</h3><a href="Danca.html" class="botao">Ver Agora</a></div><div class="card"><img loading="lazy" src="https://emtodolugar.facha.edu.br/wp-content/uploads/2022/03/whatsapp-image-2022-03-27-at-14.50.07.jpeg" alt="Teatro e Artes Cênicas" /><h3>Teatro e Artes Cênicas</h3><a href="Teatro.html" class="botao">Ver Agora</a></div><div class="card"><img loading="lazy" src="https://ims.com.br/wp-content/uploads/2017/06/Rachel-de-Queiroz-_1920.jpg" alt="Artistas" /><h3>Artistas</h3><a href="Artistas.html" class="botao">Ver Agora</a></div></main>
+<footer><p>© 2026 CEcult+ · Cultura, memória e tradições do Ceará.</p></footer>
 <script src="script.js"></script>
 </body>
 </html>
