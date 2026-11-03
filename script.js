@@ -84,7 +84,7 @@
       regs.forEach(function(r){var on=r.dataset.k===k;r.classList.toggle('sel',on);r.setAttribute('aria-pressed',on)});
       halos.forEach(function(h){h.classList.toggle('on',h.dataset.k===k)});
       chips.forEach(function(c){c.setAttribute('aria-pressed',c.dataset.k===k)});
-      panels.forEach(function(p){p.hidden=p.dataset.k!==k});
+      panels.forEach(function(p){p.hidden=p.dataset.k!==k;if(!p.hidden){var b=p.querySelector('.rp-b');if(b)b.scrollTop=0}});
       vz.hidden=!!k;
       try{history.replaceState(null,'',k?'#'+k:location.pathname)}catch(e){}
       if(k&&rolar&&innerWidth<=900)box.scrollIntoView({behavior:'smooth',block:'start'});

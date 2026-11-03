@@ -213,3 +213,13 @@ footer p{max-width:var(--max);margin:0 auto}
 .periodo-fim h2,.h2c{font-family:var(--serif);font-size:1.8rem;line-height:1.2;margin-bottom:.6em}
 .pess{padding-left:1.1em}.pess li{margin-bottom:.6em}
 @media(max-width:600px){.periodo{padding-left:16px}}
+
+/* Painel com rolagem interna: só as informações rolam */
+.rpanel:not([hidden]){display:flex;flex-direction:column;max-height:min(82vh,760px)}
+.rp-h{flex:none}
+.rp-b{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:var(--c) transparent;-webkit-overflow-scrolling:touch}
+.rp-b::-webkit-scrollbar{width:10px}
+.rp-b::-webkit-scrollbar-track{background:transparent;margin:6px 0}
+.rp-b::-webkit-scrollbar-thumb{background:var(--c);border-radius:10px;border:2px solid var(--surface)}
+.rp-b:focus-visible{outline-offset:-3px}
+@media(max-width:900px){.rpanel:not([hidden]){max-height:75vh}}
